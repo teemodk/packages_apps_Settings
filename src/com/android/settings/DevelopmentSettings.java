@@ -66,6 +66,7 @@ import android.view.View;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settings.search.Indexable;
@@ -168,6 +169,10 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String PACKAGE_MIME_TYPE = "application/vnd.android.package-archive";
 
+    private static final String KEY_CHAMBER_OF_SECRETS = "chamber_of_secrets";
+    private static final String KEY_CHAMBER_OF_UNLOCKED_SECRETS =
+            "chamber_of_unlocked_secrets";
+
     private static final int RESULT_DEBUG_APP = 1000;
 
     private static final String PERSISTENT_DATA_BLOCK_PROP = "ro.frp.pst";
@@ -248,6 +253,9 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private ListPreference mRootAccess;
     private ListPreference mSuIndicator;
     private Object mSelectedRootValue;
+
+    private Preference mChamber;
+    private SwitchPreference mChamberUnlocked;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
 
@@ -398,6 +406,23 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             mAllPrefs.add(mRootAccess);
             mAllPrefs.add(mSuIndicator);
         }
+
+        mChamber = (Preference) findPreference(KEY_CHAMBER_OF_SECRETS);
+        mAllPrefs.add(mChamber);
+        mChamberUnlocked =
+                findAndInitSwitchPref(KEY_CHAMBER_OF_UNLOCKED_SECRETS);
+        mChamberUnlocked.setOnPreferenceChangeListener(this);
+
+        boolean chamberOpened = Settings.Secure.getInt(
+                getActivity().getContentResolver(),
+                Settings.Secure.CHAMBER_OF_SECRETS, 0) == 1;
+        mChamberUnlocked.setChecked(chamberOpened);
+
+        if (chamberOpened) {
+            removePreference(mChamber);
+        } else {
+            removePreference(mChamberUnlocked);
+        }
     }
 
     private ListPreference addListPreference(String prefKey) {
@@ -468,6 +493,12 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private void removePreference(Preference preference) {
         getPreferenceScreen().removePreference(preference);
         mAllPrefs.remove(preference);
+    }
+
+    private void addPreference(Preference preference) {
+        getPreferenceScreen().addPreference(preference);
+        preference.setOnPreferenceChangeListener(this);
+        mAllPrefs.add(preference);
     }
 
     private void setPrefsEnabledState(boolean enabled) {
@@ -1579,6 +1610,18 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             pm.setApplicationEnabledSetting(TERMINAL_APP_PACKAGE,
                     mEnableTerminal.isChecked() ? PackageManager.COMPONENT_ENABLED_STATE_ENABLED
                             : PackageManager.COMPONENT_ENABLED_STATE_DEFAULT, 0);
+        } else if (preference == mChamber) {
+            if (Settings.Secure.getInt(getActivity().getContentResolver(),
+                    Settings.Secure.CHAMBER_OF_SECRETS, 0) == 0) {
+                Settings.Secure.putInt(getActivity().getContentResolver(),
+                        Settings.Secure.CHAMBER_OF_SECRETS, 1);
+                Toast.makeText(getActivity(),
+                        R.string.chamber_toast,
+                        Toast.LENGTH_LONG).show();
+                getPreferenceScreen().removePreference(mChamber);
+                addPreference(mChamberUnlocked);
+                mChamberUnlocked.setChecked(true);
+            }
         } else {
             return super.onPreferenceTreeClick(preferenceScreen, preference);
         }
@@ -1656,6 +1699,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             Settings.System.putIntForUser(getActivity().getContentResolver(),
                     Settings.System.SU_INDICATOR, Integer.parseInt((String) newValue),
                     UserHandle.USER_CURRENT);
+            return true;
+        } else if (preference == mChamberUnlocked) {
+            Settings.Secure.putInt(getActivity().getContentResolver(),
+                    Settings.Secure.CHAMBER_OF_SECRETS,
+                    (Boolean) newValue ? 1 : 0);
             return true;
         }
         return false;

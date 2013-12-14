@@ -47,19 +47,6 @@
     <!-- Summary of checkbox setting that enables the terminal app. [CHAR LIMIT=64] -->
     <string name="enable_terminal_summary">Enable terminal app that offers local shell access</string>
 
-    <!-- Expanded Desktop -->
-    <string name="power_menu_expanded_desktop">Expanded desktop</string>
-    <string name="expanded_hide_nothing">Hide nothing</string>
-    <string name="expanded_hide_status">Hide status bar</string>
-    <string name="expanded_hide_navigation">Hide navigation bar</string>
-    <string name="expanded_hide_both">Hide both</string>
-    <string name="expanded_nothing_to_show">To add a custom per-app configuration for expanded state, set \'Enabled for all\' to the off position</string>
-    <string name="expanded_desktop_state">Expanded state</string>
-    <string name="expanded_enabled_for_all">Enabled for all</string>
-    <string name="expanded_desktop_style">Expanded desktop style</string>
-    <string name="expanded_desktop_style_description">Choose a default expanded desktop style</string>
-    <string name="expanded_desktop_title">Expanded desktop options</string>
-
     <!-- SuperSU header name - the app hides itself from launcher based on this resource name being present in com.android.settings -->
     <string name="supersu_title">SuperSU</string>
 
