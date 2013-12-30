@@ -21,4 +21,7 @@
     <!-- Message of dialog asking user to confirm before enabling UMS. [CHAR LIMIT=NONE] -->
     <string name="usb_settings_enable_ums_message">I componenti di sistema e le apps potrebbero non funzionare correttamene attivando questa funzione.</string>
 
+    <!-- Rescan storage -->
+    <string name="storage_rescan_media">Effettuare nuova scansione dell\'archivio?</string>
+
 </resources>
