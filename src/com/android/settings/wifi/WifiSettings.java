@@ -1161,7 +1161,7 @@ public class WifiSettings extends RestrictedSettingsFragment
         }
     }
 
-   /**
+    /**
      * Add for EAP-SIM
      * @param config The current AP's configuration
      * @return
@@ -1200,13 +1200,13 @@ public class WifiSettings extends RestrictedSettingsFragment
      * @return
      */
     private boolean hasSimAkaProblem(WifiConfiguration wifiConfig) {
-        // if wifiConfig is null, indicate User connect wifi by click "Connect" from Context Menu 
+        // if wifiConfig is null, indicate User connect wifi by click "Connect" from Context Menu
         WifiConfiguration config = (wifiConfig != null) ? wifiConfig : mSelectedAccessPoint.getConfig();
         Log.d(TAG,"hasSimAkaProblem, wifiConfig = " + wifiConfig + " , config = " + config);
         if (config != null) {
             WifiEnterpriseConfig wifiEnterpriseConfig = config.enterpriseConfig;
             Log.d(TAG,"hasSimAkaProblem, wifiEnterpriseConfig = " + wifiEnterpriseConfig);
-            if (wifiEnterpriseConfig != null 
+            if (wifiEnterpriseConfig != null
                     && (wifiEnterpriseConfig.getEapMethod() == Eap.SIM || wifiEnterpriseConfig.getEapMethod() == Eap.AKA)) {
                 // cannot use eap-sim/aka under airplane mode
                 if (Settings.System.getInt(getContentResolver(), Settings.System.AIRPLANE_MODE_ON, 0) == 1) {
@@ -1214,7 +1214,7 @@ public class WifiSettings extends RestrictedSettingsFragment
                     return true;
                 }
                 // cannot use eap-sim/aka without a sim card
-                if (wifiEnterpriseConfig.getImsi() != null 
+                if (wifiEnterpriseConfig.getImsi() != null
                         && wifiEnterpriseConfig.getImsi().equals(WifiConfigController.ERROR_IMSI)) {
                     Toast.makeText(getActivity(), R.string.eap_sim_aka_no_sim_error, Toast.LENGTH_LONG).show();
                     return true;

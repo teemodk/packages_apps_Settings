@@ -119,7 +119,7 @@ public class WifiConfigController implements TextWatcher,
     private static final int MNC_SUB_END = 5;
     private static final int MCC_SUB_BEG = 0;
     static final String ERROR_IMSI = "error";
-    
+
     /* These values come from "wifi_peap_phase2_entries" resource array */
     public static final int WIFI_PEAP_PHASE2_NONE 	    = 0;
     public static final int WIFI_PEAP_PHASE2_MSCHAPV2 	= 1;
@@ -997,7 +997,7 @@ public class WifiConfigController implements TextWatcher,
             Log.d(TAG, "makeNAI, result = " + NAI.toString());
             return NAI.toString();
       }
-      
+
       /**
        * Add for EAP-SIM
        * @param config
