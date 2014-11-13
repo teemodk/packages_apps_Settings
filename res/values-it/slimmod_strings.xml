@@ -218,4 +218,35 @@
     <string name="chamber_title">Camera dei segreti</string>
     <string name="chamber_toast">La camera dei segreti è aperta</string>
 
+    <!-- Blacklist preferences -->
+    <string name="blacklist_title">Blacklist</string>
+    <string name="blacklist_edit_dialog_title">Modifica blacklist entry</string>
+    <string name="blacklist_prefs">Impostazioni</string>
+    <string name="blacklist_button_delete">Cancella</string>
+    <string name="blacklist_empty_text">Non hai nessun numero blacklistato. Aggiungine uno toccando il pulsante Add (+).</string>
+    <string name="blacklist_disabled_empty_text">Per blacklistare chiamate o messaggi di alcuni numeri, attivare la blacklist</string>
+    <string name="blacklist_summary_disabled">Disattivata</string>
+    <string name="blacklist_summary">Le chiamate e i messaggi in arrivo dai numeri nella blacklist saranno bloccati</string>
+    <string name="blacklist_notify">Mostra notifica</string>
+    <string name="blacklist_private_numbers_title">Numeri privati</string>
+    <string name="blacklist_private_numbers_summary_disabled">Non bloccare chiamate dai numeri privati</string>
+    <string name="blacklist_private_numbers_summary">Blocca <xliff:g id="type">%s</xliff:g> in arrivo dai numeri privati</string>
+    <string name="blacklist_unknown_numbers_title">Numeri anonimi</string>
+    <string name="blacklist_unknown_numbers_summary_disabled">Non bloccare chiamate o messaggi dai numeri non presenti nei contatti</string>
+    <string name="blacklist_unknown_numbers_summary">Blocca <xliff:g id="type">%s</xliff:g> in arrivo da numeri non presenti nei contatti</string>
+    <string name="blacklist_summary_type_calls_only">chiamate</string>
+    <string name="blacklist_summary_type_messages_only">messaggi</string>
+    <string name="blacklist_summary_type_calls_and_messages">chiamate e messaggi</string>
+    <string name="blacklist_regex_title">Usa wildcards</string>
+    <string name="blacklist_regex_summary">Usa . come wildcard e * for le ripetizioni. Es. 123.* blocca i numeri che iniziano con 123 e .*123.* blocca i numeri che contengono 123</string>
+    <string name="blacklist_policy_block_calls">Blocca le chiamate in arrivo</string>
+    <string name="blacklist_policy_block_messages">Blocca i messaggi in arrivo</string>
+    <string name="blacklist_bad_number_add">Numero non valido</string>
+
+    <!-- Blacklist management -->
+    <string name="add_blacklist_number">Aggiungi numero</string>
+    <string name="remove_blacklist_number_title">Rimuovi numero</string>
+    <string name="remove_blacklist_entry">Vuoi rimuovere questa voce dalla blacklisty?</string>
+    <string name="select_contact">Seleziona contatto</string>
+
 </resources>
