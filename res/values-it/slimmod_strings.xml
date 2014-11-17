@@ -41,4 +41,17 @@
     <!-- Summary of checkbox setting that enables the terminal app. [CHAR LIMIT=64] -->
     <string name="enable_terminal_summary">Attiva l\'app Terminale integrata nel sistema</string>
 
+    <!-- Expanded Desktop -->
+    <string name="power_menu_expanded_desktop">Desktop espanso</string>
+    <string name="expanded_hide_nothing">Non nascondere barre</string>
+    <string name="expanded_hide_status">Nascondi barra di stato</string>
+    <string name="expanded_hide_navigation">Nascondi barra di navigazione</string>
+    <string name="expanded_hide_both">Nascondi barre</string>
+    <string name="expanded_nothing_to_show">Per aggiungere una configurazione di desktop espanso specifica per app, disattiva \'Attivo per tutte le app\'</string>
+    <string name="expanded_desktop_state">Stato espanso</string>
+    <string name="expanded_enabled_for_all">Attivo per tutte le app</string>
+    <string name="expanded_desktop_style">Stile desktop espanso</string>
+    <string name="expanded_desktop_style_description">Scegli uno stile predefinito per il desktop espanso</string>
+    <string name="expanded_desktop_title">Configurazione desktop espanso</string>
+
 </resources>
