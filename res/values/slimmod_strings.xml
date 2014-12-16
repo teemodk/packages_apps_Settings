@@ -40,4 +40,8 @@
     <string name="network_traffic_autohide_summary">Hide the traffic monitor when there is no activity</string>
     <string name="network_traffic_autohide_threshold">Inactivity threshold</string> 
 
+    <!-- Developer options - kill app long press back -->
+    <string name="kill_app_longpress_back">Fast kill app</string>
+    <string name="kill_app_longpress_back_summary">Kill the foreground app by long-pressing the back key</string>
+
 </resources>
