@@ -12,4 +12,24 @@
     <string name="partition_info_title">Informazioni partizione</string>
     <string name="partition_info_summary">Mostra informazioni dettagliate sulle partizioni del dispositivo</string>
 
+    <!-- Network traffic -->
+    <string name="network_traffic_title">Traffico di rete</string>
+    <string name="show_network_traffic_state">Tipologia monitor di rete</string>
+    <string name="network_traffic_summary">Attiva il monitoraggio del traffico di rete nella barra di stato</string>
+    <string name="show_network_traffic_unit">Unità</string>
+    <string name="show_network_traffic_frequency">Intervallo di aggiornamento</string>
+    <string name="show_network_traffic_disable">Disattivato</string>
+    <string name="show_network_traffic_up">In uscita</string>
+    <string name="show_network_traffic_down">In entrata</string>
+    <string name="show_network_traffic_all">In uscita ed entrata</string>
+    <string name="show_network_traffic_bit">Bits per secondo</string>
+    <string name="show_network_traffic_byte">Bytes per secondo</string>
+    <string name="show_network_traffic_500">500 ms</string>
+    <string name="show_network_traffic_1000">1000 ms</string>
+    <string name="show_network_traffic_1500">1500 ms</string>
+    <string name="show_network_traffic_2000">2000 ms</string>
+    <string name="network_traffic_autohide">Visualizzazione intelligente</string>
+    <string name="network_traffic_autohide_summary">Nasconde il monitor del traffico in caso di attività di rete sotto la soglia impostata</string>
+    <string name="network_traffic_autohide_threshold">Soglia di inattività</string> 
+
 </resources>
