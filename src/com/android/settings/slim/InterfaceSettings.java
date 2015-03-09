@@ -40,6 +40,7 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     private static final String KEY_BITSYKO_LAYERS = "bitsyko_layers";
+    private static final String KEY_KANTJER_LAYERS = "kantjer_layers";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,12 @@ public class InterfaceSettings extends SettingsPreferenceFragment implements
             if (!isPackageInstalled("com.lovejoy777.rroandlayersmanager")) {
                 PreferenceScreen screen = getPreferenceScreen();
                 Preference pref = getPreferenceManager().findPreference(KEY_BITSYKO_LAYERS);
+                screen.removePreference(pref);
+                }
+
+            if (!isPackageInstalled("com.kantjer.xda.layers")) {
+                PreferenceScreen screen = getPreferenceScreen();
+                Preference pref = getPreferenceManager().findPreference(KEY_KANTJER_LAYERS);
                 screen.removePreference(pref);
                 }
     }

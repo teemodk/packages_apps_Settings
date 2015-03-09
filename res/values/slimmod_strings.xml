@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- BitSyko Layers  -->
+    <!-- Layers  -->
+    <string name="layers_management">Themes</string>
     <string name="bitsyko_layers_title">Themes configuration</string>
+    <string name="kantjer_layers_title">Themes backup</string>
 
 </resources>
