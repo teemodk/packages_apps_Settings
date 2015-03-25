@@ -83,16 +83,13 @@
                 android:title="@string/interface_settings_title"
                 />
 
-        <!-- SlimCenter -->
+        <!-- System tools  - stick with the slimcenter icon so common overlays can theme it -->
         <dashboard-tile
-               android:id="@+id/slim_center"
-               android:title="@string/slim_center_title"
-               android:icon="@drawable/ic_settings_slimcenter">
-               <intent
-                       android:action="android.intent.action.MAIN"
-                       android:targetPackage="com.slim.ota"
-                       android:targetClass="com.slim.center.SlimCenter" />
-        </dashboard-tile>
+                android:id="@+id/system_tools"
+                android:icon="@drawable/ic_settings_slimcenter"
+                android:fragment="com.android.settings.slim.SystemTools"
+                android:title="@string/system_tools_title"
+                />
 
     </dashboard-category>
 
@@ -257,17 +254,6 @@
                 android:fragment="com.android.settings.DevelopmentSettings"
                 android:icon="@drawable/ic_settings_development_exposed"
                 />
-
-        <!-- SuperSU -->
-        <dashboard-tile
-            android:id="@+id/supersu_settings"
-            android:icon="@drawable/ic_settings_supersu"
-            android:title="@string/supersu_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="eu.chainfire.supersu"
-                android:targetClass="eu.chainfire.supersu.MainActivity" />
-        </dashboard-tile>
 
         <!-- About Device -->
         <dashboard-tile
