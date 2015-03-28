@@ -29,7 +29,6 @@
     <!-- Slim settings screens -->
     <string name="header_category_personalization">Personalization</string>
     <string name="interface_settings_title">Interface</string>
-    <string name="advanced_settings_title">Advanced</string>
 
     <!-- Slim Shortcuts -->
     <string name="slim_shortcut_picker">Slim Actions</string>
