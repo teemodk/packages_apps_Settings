@@ -244,4 +244,7 @@
 
     <string name="usb_charging_title">Carica batteria</string>
     <string name="usb_charging_summary">Carica la batteria quando connesso al computer disattivando tutte le modalità di trasferimento dati</string>
+
+    <string name="qs_tile_notifications">Notifiche</string>
+
 </resources>
