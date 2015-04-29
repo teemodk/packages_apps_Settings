@@ -1228,22 +1228,6 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-                } else if (id == R.id.superuser) {
-                    String value = SystemProperties.get(
-                            DevelopmentSettings.ROOT_ACCESS_PROPERTY, "0");
-                    // Check if SuperSU is installed
-                    int suversion = 0;
-                    try {
-                        suversion = getPackageManager().getPackageInfo(
-                        "eu.chainfire.supersu", 0).versionCode;
-                    } catch (PackageManager.NameNotFoundException e) {
-                        suversion = 0;
-                    }
-                    if (Integer.valueOf(value) == 0 || um.hasUserRestriction(
-                            UserManager.DISALLOW_DEBUGGING_FEATURES) ||
-                            Integer.valueOf(suversion) != 0) {
-                        removeTile = true;
-                    }
                 } else if (id == R.id.supersu_settings) {
                     // Embedding into Settings is supported from SuperSU v1.85 and up
                     boolean supported = false;
