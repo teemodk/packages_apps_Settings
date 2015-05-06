@@ -24,4 +24,6 @@
     <!-- Rescan storage -->
     <string name="storage_rescan_media">Rescan media for the storage volume</string>
 
+    <string name="usb_not_connected">USB not connected</string>
+
 </resources>
