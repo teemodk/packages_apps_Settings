@@ -19,7 +19,6 @@
     <!-- General strings -->
     <string name="ok">OK</string>
     <string name="reset">Reset</string>
-    <string name="help">Help</string>
     <string name="add">Add</string>
     <string name="help">Help</string>
     <string name="attention">Attention</string>
@@ -674,5 +673,12 @@
     <!-- QuickSettings haptic feedback -->
     <string name="quick_settings_vibrate_title">Vibrate on touch</string>
     <string name="quick_settings_vibrate_summary">Vibrate when touching tiles</string>
+
+    <!-- SU indicator -->
+    <string name="su_indicator_title">Superuser indicator</string>
+    <string name="su_indicator_summary">Superuser indicator when su session is active</string>
+    <string name="su_indicator_icon">Statusbar Icon</string>
+    <string name="su_indicator_notification">Notification</string>
+    <string name="su_indicator_none">No indicator</string>
 
 </resources>

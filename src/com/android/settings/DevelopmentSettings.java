@@ -151,6 +151,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private static final String ROOT_ACCESS_KEY = "root_access";
     private static final String ROOT_ACCESS_PROPERTY = "persist.sys.root_access";
+    private static final String SU_INDICATOR_KEY = "su_indicator";
 
     private static final String ENABLE_TERMINAL = "enable_terminal";
 
@@ -245,6 +246,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
 
     private PreferenceScreen mProcessStats;
     private ListPreference mRootAccess;
+    private ListPreference mSuIndicator;
     private Object mSelectedRootValue;
 
     private final ArrayList<Preference> mAllPrefs = new ArrayList<Preference>();
@@ -390,8 +392,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mAllPrefs.add(mProcessStats);
         mRootAccess = (ListPreference) findPreference(ROOT_ACCESS_KEY);
         mRootAccess.setOnPreferenceChangeListener(this);
+        mSuIndicator = (ListPreference) findPreference(SU_INDICATOR_KEY);
+        mSuIndicator.setOnPreferenceChangeListener(this);
         if (!removeRootOptionsIfRequired()) {
             mAllPrefs.add(mRootAccess);
+            mAllPrefs.add(mSuIndicator);
         }
     }
 
@@ -429,6 +434,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         if (!(Build.IS_DEBUGGABLE || "eng".equals(Build.TYPE))) {
             if (mRootAccess != null) {
                 getPreferenceScreen().removePreference(mRootAccess);
+                getPreferenceScreen().removePreference(mSuIndicator);
                 return true;
             }
         }
@@ -1645,6 +1651,11 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             } else {
                 writeRootAccessOptions(newValue);
             }
+            return true;
+        } else if (preference == mSuIndicator) {
+            Settings.System.putIntForUser(getActivity().getContentResolver(),
+                    Settings.System.SU_INDICATOR, Integer.parseInt((String) newValue),
+                    UserHandle.USER_CURRENT);
             return true;
         }
         return false;
