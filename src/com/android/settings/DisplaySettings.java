@@ -95,8 +95,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private static final String ROTATION_ANGLE_180 = "180";
     private static final String ROTATION_ANGLE_270 = "270";
     private static final String KEY_DOZE_TIMEOUT = "doze_timeout";
-    private static final String KEY_DOZE_CATEGORY = "category_doze_options";
-
 
     private PreferenceScreen mDisplayRotationPreference;
     private WarnedListPreference mFontSizePref;
@@ -116,7 +114,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
     private ListPreference mLcdDensityPreference;
 
     private SlimSeekBarPreference mDozeTimeout;
-    private PreferenceCategory mDozeCategory;
 
     private ContentObserver mAccelerometerRotationObserver =
             new ContentObserver(new Handler()) {
