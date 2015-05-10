@@ -36,9 +36,7 @@ import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
-import android.text.TextUtils;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -151,10 +149,7 @@ public class ActionListViewSettings extends ListFragment implements
             public void remove(int which) {
                 ActionConfig item = mActionConfigsAdapter.getItem(which);
                 mActionConfigsAdapter.remove(item);
-                if ((mDisableDeleteLastEntry && mActionConfigs.size() == 0) ||
-                        (mActionMode == NAV_BAR &&
-                        item.getClickActionDescription() == ActionConstants.ACTION_HOME ||
-                        item.getClickActionDescription() == ActionConstants.ACTION_BACK)) {
+                if (mDisableDeleteLastEntry && mActionConfigs.size() == 0) {
                     mActionConfigsAdapter.add(item);
                     showDialogInner(DLG_DELETION_NOT_ALLOWED, 0, false, false);
                 } else {
@@ -524,13 +519,13 @@ public class ActionListViewSettings extends ListFragment implements
         switch (mActionMode) {
             case LOCKSCREEN_SHORTCUT:
                 return ActionHelper.getLockscreenShortcutConfig(mActivity);
+/* Disabled for now till all features are back. Enable it step per step!!!!!!
             case NAV_BAR:
                 return ActionHelper.getNavBarConfigWithDescription(
                     mActivity, mActionValuesKey, mActionEntriesKey);
             case NAV_RING:
                 return ActionHelper.getNavRingConfigWithDescription(
                     mActivity, mActionValuesKey, mActionEntriesKey);
-/* Disabled for now till all features are back. Enable it step per step!!!!!!
             case PIE:
                 return ActionHelper.getPieConfigWithDescription(
                     mActivity, mActionValuesKey, mActionEntriesKey);
@@ -552,13 +547,13 @@ public class ActionListViewSettings extends ListFragment implements
             case LOCKSCREEN_SHORTCUT:
                 ActionHelper.setLockscreenShortcutConfig(mActivity, actionConfigs, reset);
                 break;
+/* Disabled for now till all features are back. Enable it step per step!!!!!!
             case NAV_BAR:
                 ActionHelper.setNavBarConfig(mActivity, actionConfigs, reset);
                 break;
             case NAV_RING:
                 ActionHelper.setNavRingConfig(mActivity, actionConfigs, reset);
                 break;
-/* Disabled for now till all features are back. Enable it step per step!!!!!!
             case PIE:
                 ActionHelper.setPieConfig(mActivity, actionConfigs, reset);
                 break;
@@ -631,8 +626,7 @@ public class ActionListViewSettings extends ListFragment implements
                         iconUri), 36);
             }
 
-            if (iconUri == ActionConstants.ICON_EMPTY || (iconUri != null
-                    && iconUri.startsWith(ActionConstants.SYSTEM_ICON_IDENTIFIER))) {
+            if (iconUri != null && iconUri.startsWith(ActionConstants.SYSTEM_ICON_IDENTIFIER)) {
                 d.setTint(getResources().getColor(R.color.dslv_icon_dark));
             }
             holder.iconView.setImageDrawable(d);
