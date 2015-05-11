@@ -17,17 +17,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <!-- SlimCenter - with and alternative icon so if no layers are set for the main settings menu, we have a different color from the systemtool icon-->
-        <PreferenceScreen
-               android:id="@+id/slim_ota"
-               android:title="@string/slim_ota_title"
-               android:icon="@drawable/ic_alt_slimcenter">
-               <intent
-                       android:action="android.intent.action.MAIN"
-                       android:targetPackage="com.fusionjack.slimota"
-                       android:targetClass="com.fusionjack.slimota.MainActivity" />
-        </PreferenceScreen>
-
+        <!-- AdAway -->
         <PreferenceScreen
                android:id="@+id/adaway_app"
                android:title="@string/adaway_app_title"
