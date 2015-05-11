@@ -19,13 +19,13 @@
 
         <!-- SlimCenter - with and alternative icon so if no layers are set for the main settings menu, we have a different color from the systemtool icon-->
         <PreferenceScreen
-               android:id="@+id/slim_center"
-               android:title="@string/slim_center_title"
+               android:id="@+id/slim_ota"
+               android:title="@string/slim_ota_title"
                android:icon="@drawable/ic_alt_slimcenter">
                <intent
                        android:action="android.intent.action.MAIN"
-                       android:targetPackage="com.slim.ota"
-                       android:targetClass="com.slim.center.SlimCenter" />
+                       android:targetPackage="com.fusionjack.slimota"
+                       android:targetClass="com.fusionjack.slimota.MainActivity" />
         </PreferenceScreen>
 
         <PreferenceScreen
