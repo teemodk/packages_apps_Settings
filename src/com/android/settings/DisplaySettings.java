@@ -666,7 +666,6 @@ public class DisplaySettings extends SettingsPreferenceFragment implements
                     if (!isDozeAvailable(context)) {
                         result.add(KEY_DOZE);
                         result.add(KEY_ADVANCED_DOZE_OPTIONS);
-                        result.add(KEY_DOZE_TIMEOUT);
                     }
                     if (!RotationPolicy.isRotationLockToggleVisible(context)) {
                         result.add(KEY_AUTO_ROTATE);
