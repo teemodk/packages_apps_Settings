@@ -89,6 +89,12 @@
     <string name="navbar_dimensions_reset_message">Ripristinare i valori predefiniti?</string>
     <string name="navbar_button_style_reset_message">Ripristinare i valori predefiniti?</string>
 
+    <string name="shortcut_action_qs">Pannello Quicksettings</string>
+    <string name="shortcut_action_torch">Torcia</string>
+    <string name="shortcut_action_kill">Termina app</string>
+    <string name="shortcut_action_lastapp">App precedente</string>
+    <string name="shortcut_action_notifications">Notifiche</string>
+
     <!-- Navigation bar button style -->
     <string name="nav_bar_button_style">Stile pulsanti</string>
     <string name="nav_bar_button_style_summary">Personalizza lo stile dei pulsanti nella barra</string>
@@ -110,7 +116,7 @@
     <string name="qs_tiles_title">Tiles</string>
     <string name="qs_general_title">Generali</string>
 
-    <string name="qs_brightness_slider_title">Mostra slider luminositàr</string>
+    <string name="qs_brightness_slider_title">Mostra slider luminosità</string>
 
     <string name="qs_order_title">Seleziona ed ordina tiles</string>
     <string name="add_qs">Aggiungi nuova tile</string>
@@ -217,5 +223,23 @@
     <string name="expanded_desktop_style">Stile desktop espanso</string>
     <string name="expanded_desktop_style_description">Scegli uno stile predefinito per il desktop espanso</string>
     <string name="expanded_desktop_title">Configurazione desktop espanso</string>
+
+    <!-- Doze options -->
+    <string name="display_category_doze_options_title">Impostazioni Ambient display (doze)</string>
+    <string name="doze_settings_title">Configurazione avanzata Doze</string>
+    <string name="doze_timeout_title">Timeout Doze</string>
+    <string name="doze_timeout_summary">Tempo di accensione del display per la Visualizzazione delle notifiche</string>
+    <string name="doze_trigger_pickup_title">Rileva gesti</string>
+    <string name="doze_trigger_pickup_summary_on">Il sensore di movimento verrà utilizzato per attivare la modalità Doze</string>
+    <string name="doze_trigger_pickup_summary_off">Il sensore di movimento non verrà utilizzato per attivare la modalità Doze</string>
+    <string name="doze_trigger_sigmotion_title">Significant motion trigger</string>
+    <string name="doze_trigger_notification_title">Attivazione per notifiche</string>
+    <string name="doze_trigger_notification_summary_on">Le notifiche attiveranno la modalità Doze</string>
+    <string name="doze_trigger_notification_summary_off">Le notifiche attiveranno la modalità Doze</string>
+    <string name="doze_schedule_title">Programmazione Doze</string>
+    <string name="doze_schedule_summary_on">Intervallo di attivazione predefinito (normalmente [1s,10s,30s,60s,120s])</string>
+    <string name="doze_schedule_summary_off">Doze verrà attivato solo per nuove notifiche</string>
+    <string name="doze_brightness_title">Livello luminosità</string>
+    <string name="doze_brightness_summary">Livello di luminosità della notifica doze (% della luminosità massima impostata per il display)</string>
 
 </resources>
