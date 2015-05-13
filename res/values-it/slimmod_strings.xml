@@ -242,4 +242,6 @@
     <string name="doze_brightness_title">Livello luminosità</string>
     <string name="doze_brightness_summary">Livello di luminosità della notifica doze (% della luminosità massima impostata per il display)</string>
 
+    <string name="usb_charging_title">Carica batteria</string>
+    <string name="usb_charging_summary">Carica la batteria quando connesso al computer disattivando tutte le modalità di trasferimento dati</string>
 </resources>
