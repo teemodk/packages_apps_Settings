@@ -30,7 +30,6 @@ import com.android.settings.SettingsPreferenceFragment;
 public class NavigationSettings extends SettingsPreferenceFragment {
 
     private static final String KEY_HARDWARE_KEYS = "hardwarekeys_settings";
-    private static final String KEY_PIE_SETTINGS = "pie_settings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
