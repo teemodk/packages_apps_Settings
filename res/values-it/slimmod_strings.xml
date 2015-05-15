@@ -247,4 +247,6 @@
 
     <string name="qs_tile_notifications">Notifiche</string>
 
+    <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>
+
 </resources>
