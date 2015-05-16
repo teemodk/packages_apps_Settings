@@ -41,10 +41,12 @@
     <string name="battery_saver_style_reset_message">Reimpostare il colore predefinito?</string>
 
     <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_shortcuts_title">Collegamenti schermata sblocco</string>
-    <string name="lockscreen_shortcuts_summary">Aggiungi e modifica i collegamenti nella schermata di sblocco</string>
-    <string name="lockscreen_shorcuts_longpress_title">Pressione lungs</string>
-    <string name="lockscreen_shorcuts_longpress_summary">Apri i collegamenti con la pressione lunga anzichè il tap singolo</string>
+    <string name="lockscreen_shortcuts_title">Collegamenti</string>
+    <string name="lockscreen_shortcuts_summary">Aggiungi o modifica collegamenti rapidi nella schermata di sblocco</string>
+    <string name="lockscreen_shorcuts_launch_type_title">Tipo di click</string>
+    <string name="lockscreen_shortcuts_single_tap">Singolo tap</string>
+    <string name="lockscreen_shortcuts_double_tap">Doppio tap</string>
+    <string name="lockscreen_shortcuts_longpress">Pressione lunga</string>
 
     <!-- Lockscreen pin shuffle -->
     <string name="lock_numpad_random_title">Cambia l\'ordine dei numeri nel tatierino del PIN</string>
