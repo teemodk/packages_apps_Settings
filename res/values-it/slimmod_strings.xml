@@ -254,4 +254,6 @@
     <string name="status_bar_show_network_activity_title">Indicatori standard attività di rete</string>
     <string name="disabled">Disattivato</string>
 
+    <string name="network_monitors_title">Monitoraggio rete</string>
+
 </resources>

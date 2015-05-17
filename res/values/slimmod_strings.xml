@@ -67,4 +67,6 @@
 
     <string name="qs_tile_notifications">Notifications</string>
 
+    <string name="network_monitors_title">Network monitors</string>
+
 </resources>
