@@ -251,4 +251,7 @@
 
     <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>
 
+    <string name="status_bar_show_network_activity_title">Indicatori standard attività di rete</string>
+    <string name="disabled">Disattivato</string>
+
 </resources>
