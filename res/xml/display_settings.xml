@@ -19,6 +19,11 @@
         android:title="@string/display_settings"
         settings:keywords="@string/keywords_display">
 
+        <ListPreference
+                android:key="lcd_density"
+                android:title="@string/lcd_density"
+                android:persistent="false" />
+
         <PreferenceScreen
                 android:key="brightness"
                 android:title="@string/brightness"
@@ -51,11 +56,6 @@
                 android:key="screensaver"
                 android:title="@string/screensaver_settings_title"
                 android:fragment="com.android.settings.DreamSettings" />
-
-        <ListPreference
-                android:key="lcd_density"
-                android:title="@string/lcd_density"
-                android:persistent="false" />
 
         <SwitchPreference
                 android:key="lift_to_wake"
