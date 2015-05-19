@@ -1,65 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- General strings -->
-    <string name="add">Aggiungi</string>
-    <string name="choose_app">Scegli applicazione</string>
-
     <!-- Volume rocker music seek options -->
     <string name="volbtn_music_controls_title">Controllo musicale con tasti volume</string>
     <string name="volbtn_music_controls_summary">La pressione lunga dei tasti volume a schermo spento cambierà traccia</string>
 
-    <!-- Status bar - Battery Options -->
-    <string name="battery_icon_options_title">Opzioni icona batteria</string>
-    <!-- Status bar - Battery Style -->
-    <string name="status_bar_battery_style_title">Stile stato batteria</string>
-    <string name="status_bar_battery_style_circle">Cerchio</string>
-    <string name="status_bar_battery_style_dotted_circle">Cerchio puntellato</string>
-    <string name="status_bar_battery_style_text">Testo</string>
-    <string name="status_bar_battery_style_hidden">Nascosto</string>
-    <string name="status_bar_battery_style_icon_portrait">Icona batteria verticale</string>
-    <string name="status_bar_battery_style_icon_landscape">Icona batteria orizzontale</string>
-    <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">Indicatore autonomia residua</string>
-    <string name="status_bar_battery_percentage_dialog_title">Percentuale</string>
-    <string name="status_bar_battery_percentage_default">Nascosto (predefinito)</string>
-    <string name="status_bar_battery_percentage_text_inside">Nell\'icona</string>
-    <string name="status_bar_battery_percentage_text_next">Accanto all\'icona</string>
-
     <string name="status_bar_ticker_title">Ticker notifiche</string>
     <string name="status_bar_ticker_summary">Contenuto notifiche animato nella barra di stato</string>
-
-    <string name="profiles_add">Aggiungi</string>
-    <string name="profile_choose_app">Scegli app</string>
-    <string name="profile_reset_title">Resetta</string>
 
     <!-- Sound & notification > Other sounds: Title for the option enabling sound on volume slide adjust. [CHAR LIMIT=30] -->
     <string name="volume_adjust_sound_title">Suono slider volume</string>
 
-    <!-- Battery saver -->
     <string name="battery_saver_title">Colore di avviso</string>
     <string name="battery_saver_style_reset_message">Reimpostare il colore predefinito?</string>
 
-    <!-- Lockscreen Shortcuts -->
-    <string name="lockscreen_shortcuts_title">Collegamenti</string>
-    <string name="lockscreen_shortcuts_summary">Aggiungi o modifica collegamenti rapidi nella schermata di sblocco</string>
     <string name="lockscreen_shorcuts_launch_type_title">Tipo di click</string>
     <string name="lockscreen_shortcuts_single_tap">Singolo tap</string>
     <string name="lockscreen_shortcuts_double_tap">Doppio tap</string>
     <string name="lockscreen_shortcuts_longpress">Pressione lunga</string>
 
-    <!-- Lockscreen pin shuffle -->
-    <string name="lock_numpad_random_title">Cambia l\'ordine dei numeri nel tatierino del PIN</string>
-    <string name="lock_numpad_random_dialog_title">Mescola numeri PIN</string>
-    <string name="lock_numpad_random_off">Disattivato</string>
-    <string name="lock_numpad_random_always">Sempre</string>
-    <string name="lock_numpad_random_on_request">Su richiesta</string>
-
-    <!-- Navigation settings -->
     <string name="navigation_settings_options_title">Opzioni barra navigazione</string>
     <string name="navigation_settings_title">Navigazione</string>
 
-    <!-- Navigation bar -->
     <string name="navigation_bar_size_42_dp_default">42 dp (predefinito)</string>
     <string name="navigation_bar_size_48_dp_default">48 dp (predefinito)</string>
     <string name="navigation_bar_size_0_dp">0 dp (disattivata)</string>
@@ -97,7 +59,6 @@
     <string name="shortcut_action_lastapp">App precedente</string>
     <string name="shortcut_action_notifications">Notifiche</string>
 
-    <!-- Navigation bar button style -->
     <string name="nav_bar_button_style">Stile pulsanti</string>
     <string name="nav_bar_button_style_summary">Personalizza lo stile dei pulsanti nella barra</string>
     <string name="button_transparency_title">Trasparenza pulsanti</string>
@@ -107,84 +68,28 @@
     <string name="nav_button_color_mode_summary">Configura la modalità colore dei pulsanti</string>
     <string name="navigation_bar_glow_tint_title">Colore bagliore pulsanti</string>
 
-    <!-- QuickSettings: Quick Pulldown -->
-    <string name="quick_pulldown_title">Pulldown rapido</string>
-
     <string name="block_on_secure_keyguard_title">Disattiva in schermata di sblocco sicura</string>
     <string name="block_on_secure_keyguard_summary">Disattiva le impostazioni rapide nella schermata di sblocco sicura</string>
 
-    <!-- Quick Settings: Tiles  -->
-    <string name="qs_category_title">Pannello impostazioni rapide</string>
     <string name="qs_tiles_title">Tiles</string>
     <string name="qs_general_title">Generali</string>
-
-    <string name="qs_brightness_slider_title">Mostra slider luminosità</string>
-
-    <string name="qs_order_title">Seleziona ed ordina tiles</string>
-    <string name="add_qs">Aggiungi nuova tile</string>
-
-    <string name="qs_action_delete">Elimina</string>
-    <string name="qs_action_add">Aggiungi</string>
-    <string name="qs_action_no_more_tiles">Non sono disponibili altre tiles</string>
-
-    <string name="qs_tile_adb_over_network">ADB su rete</string>
-    <string name="qs_tile_airplane_mode">Modalità aereo</string>
     <string name="qs_tile_ambient_display">Ambient Display</string>
-    <string name="qs_tile_bluetooth">Bluetooth</string>
-    <string name="qs_tile_cast_screen">Trasmetti schermo</string>
-    <string name="qs_tile_cellular_data">Connessione dati</string>
-    <string name="qs_tile_compass">Bussola</string>
-    <string name="qs_tile_display_inversion">Inverti colori</string>
-    <string name="qs_tile_display_rotation">Rotazione</string>
-    <string name="qs_tile_flashlight">Torcia</string>
-    <string name="qs_tile_hotspot">Hotspot</string>
-    <string name="qs_tile_location">Localizzazione</string>
-    <string name="qs_tile_lockscreen">Schermata di sblocco</string>
-    <string name="qs_tile_lte">LTE</string>
-    <string name="qs_tile_nfc">NFC</string>
-    <string name="qs_tile_profiles">Profili di sistema</string>
-    <string name="qs_tile_performance">Prestazioni</string>
-    <string name="qs_tile_reboot">Riavvio</string>
-    <string name="qs_tile_screen_timeout">Timeout schermo</string>
-    <string name="qs_tile_screenshot">Screenshot</string>
     <string name="qs_tile_sync">Sincronizzazione</string>
-    <string name="qs_tile_usb_tether">USB tethering</string>
-    <string name="qs_tile_visualizer">AudioFX</string>
-    <string name="qs_tile_wifi">Wi\u2011Fi</string>
+    <string name="quick_pulldown_title">Pulldown rapido</string>
+    <string name="qs_tile_notifications">Notifiche</string>
 
-    <string name="qs_main_tiles_title">Evidenzia prima riga</string>
-    <string name="qs_main_tiles_summary_on">Due tiles principali nella prima riga</string>
-    <string name="qs_main_tiles_summary_off">Tre o quattro tiles per ogni riga</string>
-    <string name="qs_advanced_location_title">Tile localizzazione avanzata</string>
-    <string name="qs_advanced_location_summary">Permette di configurare la localizzazione tramite la relativa tile</string>
-
-    <!-- QuickSettings: Tiles: 4 columns -->
-    <string name="qs_four_columns_title">Mostra quattro tiles per riga</string>
-
-    <!-- QuickSettings: Tiles: haptic feedback -->
-    <string name="quick_settings_vibrate_title">Vibra al tocco</string>
-    <string name="quick_settings_vibrate_summary">Vibra al tocco delle tiles</string>
-
-    <!-- Swap Volume Buttons -->
-    <string name="swap_volume_buttons_title">Reorienta</string>
-    <string name="swap_volume_buttons_summary">Scambia tasti volume quando lo schermo viene ruotato</string>
-
-    <!-- Proximity wake -->
     <string name="proximity_wake_title">Previeni risveglio accidentale</string>
     <string name="proximity_wake_summary">Risveglia il dispositivo solo se il sensore di prossimità non è coperto</string>
 
-    <!-- Layers  -->
     <string name="layers_management">Temi</string>
     <string name="bitsyko_layers_title">Configurazione temi</string>
     <string name="kantjer_layers_title">Backup temi</string>
 
      <string name="system_tools_title">Strumenti di sistema</string>
 
-    <!-- Partition Info -->
     <string name="partition_info_title">Informazioni partizione</string>
     <string name="partition_info_summary">Mostra informazioni dettagliate sulle partizioni del dispositivo</string>
 
-    <!-- Network traffic -->
     <string name="network_traffic_title">Traffico di rete</string>
     <string name="show_network_traffic_state">Tipologia monitor di rete</string>
     <string name="network_traffic_summary">Attiva il monitoraggio del traffico di rete nella barra di stato</string>
@@ -204,16 +109,12 @@
     <string name="network_traffic_autohide_summary">Nasconde il monitor del traffico in caso di attività di rete sotto la soglia impostata</string>
     <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
 
-    <!-- Show/Hide Search Bar -->
     <string name="recents_show_searchbar">Disattiva barra di ricerca nei recenti</string>
     <string name="recents_show_searchbar_summary">Disattiva la barra di ricerca Google nel menu delle app recenti</string>
 
-    <!-- Title of checkbox setting that enables the terminal app. [CHAR LIMIT=32] -->
     <string name="enable_terminal_title">Terminale</string>
-    <!-- Summary of checkbox setting that enables the terminal app. [CHAR LIMIT=64] -->
     <string name="enable_terminal_summary">Attiva l\'app Terminale integrata nel sistema</string>
 
-    <!-- Expanded Desktop -->
     <string name="power_menu_expanded_desktop">Desktop espanso</string>
     <string name="expanded_hide_nothing">Non nascondere barre</string>
     <string name="expanded_hide_status">Nascondi barra di stato</string>
@@ -226,15 +127,6 @@
     <string name="expanded_desktop_style_description">Scegli uno stile predefinito per il desktop espanso</string>
     <string name="expanded_desktop_title">Configurazione desktop espanso</string>
 
-    <!-- Doze options -->
-    <string name="display_category_doze_options_title">Impostazioni Ambient display (doze)</string>
-    <string name="doze_settings_title">Configurazione avanzata Doze</string>
-    <string name="doze_timeout_title">Timeout Doze</string>
-    <string name="doze_timeout_summary">Tempo di accensione del display per la Visualizzazione delle notifiche</string>
-    <string name="doze_trigger_pickup_title">Rileva gesti</string>
-    <string name="doze_trigger_pickup_summary_on">Il sensore di movimento verrà utilizzato per attivare la modalità Doze</string>
-    <string name="doze_trigger_pickup_summary_off">Il sensore di movimento non verrà utilizzato per attivare la modalità Doze</string>
-    <string name="doze_trigger_sigmotion_title">Significant motion trigger</string>
     <string name="doze_trigger_notification_title">Attivazione per notifiche</string>
     <string name="doze_trigger_notification_summary_on">Le notifiche attiveranno la modalità Doze</string>
     <string name="doze_trigger_notification_summary_off">Le notifiche attiveranno la modalità Doze</string>
@@ -247,16 +139,10 @@
     <string name="usb_charging_title">Carica batteria</string>
     <string name="usb_charging_summary">Carica la batteria quando connesso al computer disattivando tutte le modalità di trasferimento dati</string>
 
-    <string name="qs_tile_notifications">Notifiche</string>
-
-    <string name="bluetooth_accept_all_files">Accetta tutti i tipi di file</string>
-
     <string name="status_bar_show_network_activity_title">Indicatori standard attività di rete</string>
     <string name="disabled">Disattivato</string>
-
     <string name="network_monitors_title">Monitoraggio rete</string>
 
-        <!-- Heads up -->
     <string name="heads_up_title">Notifiche heads up</string>
     <string name="app_notification_enable_heads_up_title">Mostra heads up</string>
     <string name="app_notification_enable_heads_up_summary">Mostra le notifiche di questa app come heads up</string>
