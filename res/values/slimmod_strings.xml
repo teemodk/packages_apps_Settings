@@ -4,7 +4,7 @@
     <!-- Layers  -->
     <string name="layers_management">Themes</string>
     <string name="bitsyko_layers_title">Themes configuration</string>
-    <string name="kantjer_layers_title">Themes backup</string>
+    <!--     <string name="kantjer_layers_title">Themes backup</string>  -->
 
      <string name="system_tools_title">System tools</string>
 
