@@ -214,4 +214,8 @@
     <string name="pie_disable_ime_triggers_title">Attivazione ridotta per tastiera</string>
     <string name="pie_disable_ime_triggers_summary">Riduce la zona di attivazione della Pie se è attiva la tastiera</string>
 
+    <!-- Chamber of Secrets -->
+    <string name="chamber_title">Camera dei segreti</string>
+    <string name="chamber_toast">La camera dei segreti è aperta</string>
+
 </resources>
