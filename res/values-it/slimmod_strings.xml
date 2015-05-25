@@ -246,7 +246,7 @@
     <!-- Blacklist management -->
     <string name="add_blacklist_number">Aggiungi numero</string>
     <string name="remove_blacklist_number_title">Rimuovi numero</string>
-    <string name="remove_blacklist_entry">Vuoi rimuovere questa voce dalla blacklisty?</string>
+    <string name="remove_blacklist_entry">Vuoi rimuovere questa voce dalla blacklist?</string>
     <string name="select_contact">Seleziona contatto</string>
 
 </resources>
