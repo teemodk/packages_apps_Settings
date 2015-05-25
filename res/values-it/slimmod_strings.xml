@@ -249,4 +249,9 @@
     <string name="remove_blacklist_entry">Vuoi rimuovere questa voce dalla blacklist?</string>
     <string name="select_contact">Seleziona contatto</string>
 
+    <!-- Increasing ring tone volume -->
+    <string name="increasing_ring_volume_option_title">Suoneria a volume crescente</string>
+    <string name="increasing_ring_min_volume_title">Volume iniziale</string>
+    <string name="increasing_ring_ramp_up_time_title">Volume finale</string>
+
 </resources>
