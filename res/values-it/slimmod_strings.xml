@@ -58,6 +58,7 @@
     <string name="shortcut_action_kill">Termina app</string>
     <string name="shortcut_action_lastapp">App precedente</string>
     <string name="shortcut_action_notifications">Notifiche</string>
+    <string name="shortcut_action_smart">Pulldown intelligente</string>
 
     <string name="nav_bar_button_style">Stile pulsanti</string>
     <string name="nav_bar_button_style_summary">Personalizza lo stile dei pulsanti nella barra</string>
