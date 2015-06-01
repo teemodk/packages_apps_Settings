@@ -252,4 +252,26 @@
     <string name="increasing_ring_min_volume_title">Volume iniziale</string>
     <string name="increasing_ring_ramp_up_time_title">Tempo di incremento</string>
 
+    <!-- Recent panel -->
+    <string name="recent_panel_category">Pannello apps recenti</string>
+    <string name="recent_panel_scale_title">Dimensione</string>
+    <string name="recent_panel_scale_summary">Dimensione pannello apps recenti in percentuale</string>
+    <string name="recent_panel_100">100% (default)</string>
+    <string name="recent_panel_85">85%</string>
+    <string name="recent_panel_70">70%</string>
+    <string name="recent_panel_expanded_mode_title">Modalità espansa</string>
+    <string name="recent_panel_expanded_mode_summary">Modalità di espansione delle anteprime delle apps</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">Sempre</string>
+    <string name="recent_panel_expanded_mode_never">Mai</string>
+    <string name="recent_panel_show_topmost_title">Mostra task principale</string>
+    <string name="recent_panel_show_topmost_summary">Non esclude il task principale nel pannello delle apps recenti</string>
+    <string name="recent_panel_bg_color_title">Colore sfondo pannello</string>
+    <string name="recent_card_bg_color_title">Colore sfondo schede</string>
+    <string name="recent_card_text_color_title">Colore testo schede</string>
+
+    <!-- ATTENTION: RTL languages need to replace left with right -->
+    <string name="recent_panel_lefty_mode_title">Mostra a sinistra</string>
+    <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle apps recenti sul lato sinistro</string>
+
 </resources>
