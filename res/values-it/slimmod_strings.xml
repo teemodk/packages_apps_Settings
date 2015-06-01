@@ -211,6 +211,7 @@
     <string name="pie_trigger_warning">Almeno uno dei punti di attivazione deve essere attivato</string>
     <string name="pie_disable_ime_triggers_title">Attivazione ridotta per tastiera</string>
     <string name="pie_disable_ime_triggers_summary">Riduce la zona di attivazione della Pie se è attiva la tastiera</string>
+    <string name="shortcut_action_required_warning_message">Non è possibile rimuovere questo pulsante</string>
 
     <!-- Chamber of Secrets -->
     <string name="chamber_title">Camera dei segreti</string>
