@@ -256,6 +256,9 @@
 
     <!-- Recent panel -->
     <string name="recent_panel_category">Pannello apps recenti</string>
+    <string name="use_slim_recents_title">Menu recenti Slim</string>
+    <string name="show_running_tasks_title">Mostra solo app correnti</string>
+    <string name="recents_max_apps_title">Numero massimo di apps</string>
     <string name="recent_panel_scale_title">Dimensione</string>
     <string name="recent_panel_scale_summary">Dimensione pannello apps recenti in percentuale</string>
     <string name="recent_panel_100">100% (default)</string>
