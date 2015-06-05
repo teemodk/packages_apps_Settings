@@ -109,8 +109,10 @@
     <string name="show_network_traffic_2000">2000 ms</string>
     <string name="network_traffic_autohide">Visualizzazione intelligente</string>
     <string name="network_traffic_autohide_summary">Nasconde il monitor del traffico in caso di attività di rete sotto la soglia impostata</string>
+    <string name="network_traffic_autohide_threshold">Soglia di inattività</string>
 
-    <string name="network_traffic_autohide_threshold">Soglia di inattività</string> 
+    <string name="recents_show_searchbar">Disattiva barra di ricerca nei Recenti stock</string>
+    <string name="recents_show_searchbar_summary">Disattiva la barra di ricerca Google nel pannello stock delle apps recenti</string>
 
     <string name="enable_terminal_title">Terminale</string>
     <string name="enable_terminal_summary">Attiva l\'app Terminale integrata nel sistema</string>
