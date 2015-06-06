@@ -133,7 +133,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private static final String SHOW_HW_LAYERS_UPDATES_KEY = "show_hw_layers_udpates";
     private static final String DEBUG_HW_OVERDRAW_KEY = "debug_hw_overdraw";
     private static final String DEBUG_LAYOUT_KEY = "debug_layout";
-    private static final String FORCE_RTL_LAYOUT_KEY = "force_rtl_layout_all_locales";
+//    private static final String FORCE_RTL_LAYOUT_KEY = "force_rtl_layout_all_locales";
     private static final String WINDOW_ANIMATION_SCALE_KEY = "window_animation_scale";
     private static final String TRANSITION_ANIMATION_SCALE_KEY = "transition_animation_scale";
     private static final String ANIMATOR_DURATION_SCALE_KEY = "animator_duration_scale";
@@ -225,7 +225,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
     private SwitchPreference mShowHwScreenUpdates;
     private SwitchPreference mShowHwLayersUpdates;
     private SwitchPreference mDebugLayout;
-    private SwitchPreference mForceRtlLayout;
+//    private SwitchPreference mForceRtlLayout;
     private ListPreference mDebugHwOverdraw;
     private ListPreference mLogdSize;
     private ListPreference mTrackFrameTime;
@@ -355,7 +355,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         mShowHwScreenUpdates = findAndInitSwitchPref(SHOW_HW_SCREEN_UPDATES_KEY);
         mShowHwLayersUpdates = findAndInitSwitchPref(SHOW_HW_LAYERS_UPDATES_KEY);
         mDebugLayout = findAndInitSwitchPref(DEBUG_LAYOUT_KEY);
-        mForceRtlLayout = findAndInitSwitchPref(FORCE_RTL_LAYOUT_KEY);
+//        mForceRtlLayout = findAndInitSwitchPref(FORCE_RTL_LAYOUT_KEY);
         mDebugHwOverdraw = addListPreference(DEBUG_HW_OVERDRAW_KEY);
         mWifiDisplayCertification = findAndInitSwitchPref(WIFI_DISPLAY_CERTIFICATION_KEY);
         mWifiVerboseLogging = findAndInitSwitchPref(WIFI_VERBOSE_LOGGING_KEY);
@@ -618,7 +618,7 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
         updateAppProcessLimitOptions();
         updateShowAllANRsOptions();
         updateVerifyAppsOverUsbOptions();
-        updateForceRtlOptions();
+//        updateForceRtlOptions();
         updateLogdSizeValues();
         updateWifiDisplayCertificationOptions();
         updateWifiVerboseLoggingOptions();
@@ -1154,18 +1154,18 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
                 mUSBAudio.isChecked() ? 1 : 0);
     }
 
-    private void updateForceRtlOptions() {
-        updateSwitchPreference(mForceRtlLayout, Settings.Global.getInt(getActivity().getContentResolver(),
-                Settings.Global.DEVELOPMENT_FORCE_RTL, 0) != 0);
-    }
+//    private void updateForceRtlOptions() {
+//        updateSwitchPreference(mForceRtlLayout, Settings.Global.getInt(getActivity().getContentResolver(),
+//                Settings.Global.DEVELOPMENT_FORCE_RTL, 0) != 0);
+//    }
 
-    private void writeForceRtlOptions() {
-        boolean value = mForceRtlLayout.isChecked();
-        Settings.Global.putInt(getActivity().getContentResolver(),
-                Settings.Global.DEVELOPMENT_FORCE_RTL, value ? 1 : 0);
-        SystemProperties.set(Settings.Global.DEVELOPMENT_FORCE_RTL, value ? "1" : "0");
-        LocalePicker.updateLocale(getActivity().getResources().getConfiguration().locale);
-    }
+//    private void writeForceRtlOptions() {
+//        boolean value = mForceRtlLayout.isChecked();
+//        Settings.Global.putInt(getActivity().getContentResolver(),
+//                Settings.Global.DEVELOPMENT_FORCE_RTL, value ? 1 : 0);
+//        SystemProperties.set(Settings.Global.DEVELOPMENT_FORCE_RTL, value ? "1" : "0");
+//        LocalePicker.updateLocale(getActivity().getResources().getConfiguration().locale);
+//    }
 
     private void updateWifiDisplayCertificationOptions() {
         updateSwitchPreference(mWifiDisplayCertification, Settings.Global.getInt(
@@ -1591,8 +1591,8 @@ public class DevelopmentSettings extends SettingsPreferenceFragment
             writeShowHwLayersUpdatesOptions();
         } else if (preference == mDebugLayout) {
             writeDebugLayoutOptions();
-        } else if (preference == mForceRtlLayout) {
-            writeForceRtlOptions();
+//        } else if (preference == mForceRtlLayout) {
+//            writeForceRtlOptions();
         } else if (preference == mWifiDisplayCertification) {
             writeWifiDisplayCertificationOptions();
         } else if (preference == mWifiVerboseLogging) {
