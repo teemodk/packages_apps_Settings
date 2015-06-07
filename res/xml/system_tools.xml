@@ -17,6 +17,20 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+    <PreferenceScreen
+        android:key="navbar_targets_settings"
+        android:icon="@drawable/ic_alt_power"
+        android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
+        android:title="@string/power_menu_title">
+            <extra android:name="actionMode" android:value="5" />
+            <extra android:name="maxAllowedActions" android:value="6" />
+            <extra android:name="disableLongpress" android:value="true" />
+            <extra android:name="disableDeleteLastEntry" android:value="true" />
+            <extra android:name="actionValues" android:value="shortcut_action_power_menu_values" />
+            <extra android:name="actionEntries" android:value="shortcut_action_power_menu_entries" />
+            <extra android:name="fragment" android:value="com.android.settings.slim.fragments.PowerMenuFragment" />
+    </PreferenceScreen>
+
         <!-- AdAway -->
         <PreferenceScreen
                android:id="@+id/adaway_app"
