@@ -21,6 +21,7 @@
 
     <string name="navigation_settings_options_title">Opzioni barra navigazione</string>
     <string name="navigation_settings_title">Navigazione</string>
+    <string name="power_menu_title">Menu spegnimento</string>
 
     <string name="navigation_bar_size_42_dp_default">42 dp (predefinito)</string>
     <string name="navigation_bar_size_48_dp_default">48 dp (predefinito)</string>
@@ -280,5 +281,12 @@
     <!-- ATTENTION: RTL languages need to replace left with right -->
     <string name="recent_panel_lefty_mode_title">Mostra a sinistra</string>
     <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle apps recenti sul lato sinistro</string>
+
+    <string name="shortcut_action_airplane">Modalità aereo</string>
+    <string name="shortcut_action_power_off">Spegnimento</string>
+    <string name="shortcut_action_reboot">Riavvio</string>
+    <string name="shortcut_action_sound">Suono</string>
+    <string name="shortcut_action_users">Utenti</string>
+    <string name="shortcut_action_lockdown">Blocco</string>
 
 </resources>
