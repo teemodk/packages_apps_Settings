@@ -282,7 +282,7 @@
     <string name="recent_panel_lefty_mode_title">Mostra a sinistra</string>
     <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle apps recenti sul lato sinistro</string>
 
-    <string name="screen_recorder_title">Registra schermo</string>
+    <string name="screen_recorder_title">Configura registrazione schermo</string>
     <string name="shortcut_action_screenrecord">Registra schermo</string>
     <string name="shortcut_action_airplane">Modalità aereo</string>
     <string name="shortcut_action_power_off">Spegnimento</string>

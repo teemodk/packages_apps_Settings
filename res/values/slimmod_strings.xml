@@ -70,7 +70,7 @@
     <string name="network_monitors_title">Network monitors</string>
 
     <!-- Screen recorder -->
-    <string name="screen_recorder_title">Screen recorder</string>
+    <string name="screen_recorder_title">Screen recorder configuration</string>
     <string name="shortcut_action_airplane">Airplane mode</string>
     <string name="shortcut_action_power_off">Power off</string>
     <string name="shortcut_action_reboot">Reboot</string>
