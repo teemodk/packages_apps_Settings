@@ -282,11 +282,17 @@
     <string name="recent_panel_lefty_mode_title">Mostra a sinistra</string>
     <string name="recent_panel_lefty_mode_summary">Mostra il pannello delle apps recenti sul lato sinistro</string>
 
+    <string name="screen_recorder_title">Registra schermo</string>
+    <string name="screen_recorder_summary">Configura le impostazioni di registrazione video</string>
+    <string name="shortcut_action_screenrecord">Registra schermo</string>
     <string name="shortcut_action_airplane">Modalità aereo</string>
     <string name="shortcut_action_power_off">Spegnimento</string>
     <string name="shortcut_action_reboot">Riavvio</string>
     <string name="shortcut_action_sound">Suono</string>
     <string name="shortcut_action_users">Utenti</string>
     <string name="shortcut_action_lockdown">Blocco</string>
+    <string name="screen_recorder_video_dimensions_title">Risoluzione</string>
+    <string name="screen_recorder_record_audio_title">Audio esterno</string>
+    <string name="screen_recorder_record_audio_summary">Registra suoni tramite il microfono</string>
 
 </resources>
