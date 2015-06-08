@@ -295,5 +295,5 @@
     <string name="screen_recorder_record_audio_summary">Registra suoni tramite il microfono</string>
 
     <string name="show_ime_arrows_title">Mostra frecce durante digitazione</string>
-    <string name="show_ime_arrows_summary">Visualizza i cursori destro e sinistro nella barra di navigazione durante la digitazione. La pressione lunga va ad inizio o fine frase. Questo settaggio disattiva lo switch IME e il pulsante menu.</string>
+    <string name="show_ime_arrows_summary">Visualizza i cursori destro e sinistro nella barra di navigazione durante la digitazione. La pressione lunga va ad inizio o fine frase.</string>
 </resources>
