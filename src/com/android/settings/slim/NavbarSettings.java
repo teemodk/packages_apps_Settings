@@ -113,8 +113,6 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         }
 
         mStatusBarImeArrows = (SwitchPreference) findPreference(STATUS_BAR_IME_ARROWS);
-        mStatusBarImeArrows.setChecked(Settings.System.getInt(getContentResolver(),
-                Settings.System.STATUS_BAR_IME_ARROWS, 0) == 1);
         mStatusBarImeArrows.setOnPreferenceChangeListener(this);
 
         updateSettings();
@@ -138,6 +136,10 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
             mNavigationBarCanMove.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.NAVIGATION_BAR_CAN_MOVE, 1) == 0);
         }
+
+        mStatusBarImeArrows.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.System.STATUS_BAR_IME_ARROWS, 0) == 1);
+
         updateNavbarPreferences(enableNavigationBar);
     }
 
@@ -151,6 +153,7 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         }
         mMenuDisplayLocation.setEnabled(show
             && mNavBarMenuDisplayValue != 1);
+       mStatusBarImeArrows.setEnabled(show);
     }
 
     @Override
@@ -182,8 +185,9 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
                     ((Boolean) newValue) ? 0 : 1);
             return true;
         } else if (preference == mStatusBarImeArrows) {
-            Settings.System.putInt(getContentResolver(),
-                Settings.System.STATUS_BAR_IME_ARROWS, (Boolean) objValue ? 1 : 0);
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.System.STATUS_BAR_IME_ARROWS,
+                    ((Boolean) newValue) ? 1 : 0);
             return true;
         }
         return false;
