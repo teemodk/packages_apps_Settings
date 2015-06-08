@@ -17,29 +17,27 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-    <PreferenceScreen
-        android:key="navbar_targets_settings"
-        android:icon="@drawable/ic_alt_power"
-        android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
-        android:title="@string/power_menu_title">
-            <extra android:name="actionMode" android:value="5" />
-            <extra android:name="maxAllowedActions" android:value="6" />
-            <extra android:name="disableLongpress" android:value="true" />
-            <extra android:name="disableDeleteLastEntry" android:value="true" />
-            <extra android:name="actionValues" android:value="shortcut_action_power_menu_values" />
-            <extra android:name="actionEntries" android:value="shortcut_action_power_menu_entries" />
-            <extra android:name="fragment" android:value="com.android.settings.slim.fragments.PowerMenuFragment" />
-    </PreferenceScreen>
-
-        <!-- AdAway -->
+        <!-- Power menu config -->
         <PreferenceScreen
-               android:id="@+id/adaway_app"
-               android:title="@string/adaway_app_title"
-               android:icon="@drawable/ic_alt_adaway">
-               <intent
-                       android:action="android.intent.action.MAIN"
-                       android:targetPackage="org.adaway"
-                       android:targetClass="org.adaway.ui.BaseActivity" />
+            android:key="navbar_targets_settings"
+            android:icon="@drawable/ic_alt_power"
+            android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
+            android:title="@string/power_menu_title">
+                <extra android:name="actionMode" android:value="5" />
+                <extra android:name="maxAllowedActions" android:value="6" />
+                <extra android:name="disableLongpress" android:value="true" />
+                <extra android:name="disableDeleteLastEntry" android:value="true" />
+                <extra android:name="actionValues" android:value="shortcut_action_power_menu_values" />
+                <extra android:name="actionEntries" android:value="shortcut_action_power_menu_entries" />
+                <extra android:name="fragment" android:value="com.android.settings.slim.fragments.PowerMenuFragment" />
+        </PreferenceScreen>
+
+        <!-- ScreenRecorder -->
+        <PreferenceScreen
+            android:key="screen_recorder"
+            android:title="@string/screen_recorder_title"
+            android:icon="@drawable/ic_alt_screenrecord"
+            android:fragment="com.android.settings.slim.ScreenRecorderSettings" >
         </PreferenceScreen>
 
         <!-- SuperSU -->
@@ -51,14 +49,6 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="eu.chainfire.supersu"
                 android:targetClass="eu.chainfire.supersu.MainActivity" />
-        </PreferenceScreen>
-
-        <!-- ScreenRecorder -->
-        <PreferenceScreen
-            android:key="screen_recorder"
-            android:title="@string/screen_recorder_title"
-            android:icon="@drawable/ic_alt_screenrecord"
-            android:fragment="com.android.settings.slim.ScreenRecorderSettings" >
         </PreferenceScreen>
 
 </PreferenceScreen>

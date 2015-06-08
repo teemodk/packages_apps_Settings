@@ -1234,15 +1234,6 @@ public class SettingsActivity extends Activity
                     if (!supported) {
                         removeTile = true;
                     }
-                } else if (id == R.id.adaway_app) {
-                    boolean supported = false;
-                    try {
-                        supported = (getPackageManager().getPackageInfo("org.adaway", 0).versionCode > 0);
-                    } catch (PackageManager.NameNotFoundException e) {
-                    }
-                    if (!supported) {
-                        removeTile = true;
-                    }
                 }
 
                 if (UserHandle.MU_ENABLED && UserHandle.myUserId() != 0
