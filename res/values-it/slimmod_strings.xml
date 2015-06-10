@@ -92,7 +92,7 @@
     <string name="bitsyko_layers_title">Configurazione temi</string>
     <!--     <string name="kantjer_layers_title">Backup temi</string>  -->
 
-     <string name="system_tools_title">Strumenti di sistema</string>
+     <string name="system_tools_title">Avanzate</string>
 
     <string name="partition_info_title">Informazioni partizione</string>
     <string name="partition_info_summary">Mostra informazioni dettagliate sulle partizioni del dispositivo</string>

@@ -17,10 +17,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+        <!-- SuperSU -->
+        <PreferenceScreen
+            android:id="@+id/supersu_settings"
+            android:title="@string/supersu_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="eu.chainfire.supersu"
+                android:targetClass="eu.chainfire.supersu.MainActivity" />
+        </PreferenceScreen>
+
         <!-- Power menu config -->
         <PreferenceScreen
             android:key="navbar_targets_settings"
-            android:icon="@drawable/ic_alt_power"
             android:fragment="com.android.settings.slim.dslv.ActionListViewSettings"
             android:title="@string/power_menu_title">
                 <extra android:name="actionMode" android:value="5" />
@@ -36,19 +45,7 @@
         <PreferenceScreen
             android:key="screen_recorder"
             android:title="@string/screen_recorder_title"
-            android:icon="@drawable/ic_alt_screenrecord"
             android:fragment="com.android.settings.slim.ScreenRecorderSettings" >
-        </PreferenceScreen>
-
-        <!-- SuperSU -->
-        <PreferenceScreen
-            android:id="@+id/supersu_settings"
-            android:icon="@drawable/ic_alt_supersu"
-            android:title="@string/supersu_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="eu.chainfire.supersu"
-                android:targetClass="eu.chainfire.supersu.MainActivity" />
         </PreferenceScreen>
 
 </PreferenceScreen>

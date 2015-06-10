@@ -83,20 +83,20 @@
                 android:title="@string/interface_settings_title"
                 />
 
-        <!-- System tools  - stick with the slimcenter icon so common overlays can theme it -->
-        <dashboard-tile
-                android:id="@+id/system_tools"
-                android:icon="@drawable/ic_settings_slimcenter"
-                android:fragment="com.android.settings.slim.SystemTools"
-                android:title="@string/system_tools_title"
-                />
-
         <!-- Navigation -->
         <dashboard-tile
                 android:id="@+id/navigation_settings"
                 android:icon="@drawable/ic_settings_navigation"
                 android:fragment="com.android.settings.slim.NavigationSettings"
                 android:title="@string/navigation_settings_title"
+                />
+
+        <!-- System tools  - stick with the slimcenter icon so common overlays can theme it -->
+        <dashboard-tile
+                android:id="@+id/system_tools"
+                android:icon="@drawable/ic_settings_slimcenter"
+                android:fragment="com.android.settings.slim.SystemTools"
+                android:title="@string/system_tools_title"
                 />
 
     </dashboard-category>

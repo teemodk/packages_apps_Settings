@@ -6,7 +6,7 @@
     <string name="bitsyko_layers_title">Themes configuration</string>
     <!--     <string name="kantjer_layers_title">Themes backup</string>  -->
 
-     <string name="system_tools_title">System tools</string>
+     <string name="system_tools_title">Advanced</string>
 
     <!-- Partition Info -->
     <string name="partition_info_title">View partition information</string>
