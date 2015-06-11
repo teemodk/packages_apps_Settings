@@ -61,7 +61,7 @@
         android:title="@string/enable_quickboot_title"
         android:summary="@string/enable_quickboot_summary" />
 
-    <ListPreference
+<!--    <ListPreference
         android:key="root_access"
         android:title="@string/root_access"
         android:persistent="false"
@@ -74,7 +74,7 @@
         android:summary="@string/su_indicator_summary"
         android:defaultValue="1"
         android:entries="@array/su_indicator_entries"
-        android:entryValues="@array/su_indicator_values" />
+    android:entryValues="@array/su_indicator_values" /> -->
 
     <PreferenceCategory android:key="debug_debugging_category"
             android:title="@string/debug_debugging_category">
