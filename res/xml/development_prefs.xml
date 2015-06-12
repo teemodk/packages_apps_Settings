@@ -64,6 +64,7 @@
     <ListPreference
         android:key="root_access"
         android:title="@string/root_access"
+        android:defaultValue="3"
         android:persistent="false"
         android:entries="@array/root_access_entries"
         android:entryValues="@array/root_access_values" />
@@ -72,7 +73,7 @@
         android:key="su_indicator"
         android:title="@string/su_indicator_title"
         android:summary="@string/su_indicator_summary"
-        android:defaultValue="1"
+        android:defaultValue="0"
         android:entries="@array/su_indicator_entries"
         android:entryValues="@array/su_indicator_values" />
 
