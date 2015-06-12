@@ -313,4 +313,7 @@
     <string name="power_notifications_ringtone_title">Suono di notifica</string>
     <!-- Sound settings, charging sounds label for ringtone == none -->
     <string name="power_notifications_ringtone_silent">Silenzioso</string>
+
+    <string name="zen_mode_none_category">No interruzioni</string>
+    <string name="allow_lights_title">Permetti notifiche led</string>
 </resources>
