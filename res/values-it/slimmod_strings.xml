@@ -316,4 +316,28 @@
 
     <string name="zen_mode_none_category">No interruzioni</string>
     <string name="allow_lights_title">Permetti notifiche led</string>
+
+    <!-- LiveDisplay -->
+    <string name="live_display_title" translatable="false">LiveDisplay</string>
+    <string name="live_display_summary">Ottimizza lo schermo in base all\'ora o le condizioni ambientali per migliorare la leggibilità e ridurre lo sforzo visivo</string>
+    <string name="live_display_mode">Modalità</string>
+    <string name="live_display_color_temperature_title">Temperatura colore</string>
+    <string name="live_display_color_temperature_summary">Giorno: <xliff:g id="day_temperature">%1$d</xliff:g>K  Notte: <xliff:g id="night_temperature">%2$d</xliff:g>K</string>
+    <string name="live_display_color_temperature_label"><xliff:g id="degrees">%1$d</xliff:g>K</string>
+    <string name="live_display_day">Giorno</string>
+    <string name="live_display_night">Notte</string>
+    <string name="live_display_outdoor_mode_title">Modalità automatica basata sulla luce ambientale</string>
+    <string name="live_display_outdoor_mode_summary">Aumenta la luminosità e la saturazione a seconda della luce ambientale</string>
+    <string name="live_display_low_power_title">Riduzione del consumo energetico</string>
+    <string name="live_display_low_power_summary">Imposta lo schermo per un consumo energetico ridotto senza degradare la qualità visiva</string>
+    <string name="live_display_enhance_color_title">Migliora colori</string>
+    <string name="live_display_enhance_color_summary">Migliora la tonalità e la vividezza dei colori</string>
+    <string name="category_calibration">Calibrazione</string>
+    <!-- Hardware tunables - Color calibration -->
+    <string name="color_calibration_title">Calibrazione colore</string>
+    <string name="color_calibration_summary">Calibra i colori dello schermo</string>
+    <string name="color_red_title">Rosso</string>
+    <string name="color_green_title">Verde</string>
+    <string name="color_blue_title">Blu</string>
+
 </resources>
