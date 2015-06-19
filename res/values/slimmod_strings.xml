@@ -51,6 +51,7 @@
     <string name="supersu_title">SuperSU</string>
 
     <string name="qs_tile_notifications">Notifications</string>
+    <string name="qs_battery_saver_tile">Battery saver</string>
 
     <string name="network_monitors_title">Network monitors</string>
 

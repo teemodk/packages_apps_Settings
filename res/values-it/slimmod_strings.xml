@@ -84,6 +84,7 @@
     <string name="quick_pulldown_title">Pulldown rapido</string>
     <string name="qs_tile_notifications">Notifiche</string>
     <string name="qs_expanded_desktop_tile">Desktop espanso</string>
+    <string name="qs_battery_saver_tile">Risparmio batteria</string>
 
     <string name="proximity_wake_title">Previeni risveglio accidentale</string>
     <string name="proximity_wake_summary">Risveglia il dispositivo solo se il sensore di prossimità non è coperto</string>
