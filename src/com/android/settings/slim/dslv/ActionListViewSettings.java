@@ -659,7 +659,7 @@ public class ActionListViewSettings extends ListFragment implements
                     }
                 }
             }
-            holder.iconView.setImageBitmap(ImageHelper.drawableToBitmap(d));
+            holder.iconView.setImageDrawable(d);
 
             if (!mDisableIconPicker && holder.iconView.getDrawable() != null) {
                 holder.iconView.setOnClickListener(new OnClickListener() {
