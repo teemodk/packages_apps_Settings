@@ -170,6 +170,8 @@
     <string name="heads_up_time_out_8sec">8 secondi</string>
     <string name="heads_up_time_out_10sec">10 secondi</string>
     <string name="heads_up_time_out_never">Mai</string>
+    <string name="heads_up_global_switch_title">Visualizza heads up</string>
+    <string name="heads_up_global_switch_summary">Quando attivo, visualizza le notifiche come heads up in base all\'impostazione specifica per app.\nQuando disattivato, visualizza solo le notifiche standard.</string>
 
     <string name="additional_options_title">Opzioni aggiuntive</string>
     <string name="navigation_bar_warning_no_navigation_present">Non ci sono altre barre di navigazione attive. Disattivandole tutte non potrai usare il dispositivo. Vuoi attivare i controlli PIE?</string>
