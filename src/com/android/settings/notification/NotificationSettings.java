@@ -38,6 +38,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.os.UserHandle;
 import android.os.Vibrator;
 import android.preference.ListPreference;
 import android.preference.Preference;
@@ -80,6 +81,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private static final String KEY_LOCK_SCREEN_NOTIFICATIONS = "lock_screen_notifications";
     private static final String KEY_NOTIFICATION_ACCESS = "manage_notification_access";
     private static final String PREF_HEADS_UP_GLOBAL_SWITCH = "heads_up_global_switch";
+    private static final String PREF_HEADS_UP_FLOATING = "heads_up_floating";
     private static final String PREF_HEADS_UP_SNOOZE_TIME = "heads_up_snooze_time";
     private static final String PREF_HEADS_UP_TIME_OUT = "heads_up_time_out";
     private static final String KEY_INCREASING_RING_VOLUME = "increasing_ring_volume";
@@ -129,6 +131,7 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
     private PreferenceCategory mSoundCategory;
 
     private ListPreference mHeadsUpGlobalSwitch;
+    private SwitchPreference mHeadsUpFloatingWindow;
     private ListPreference mHeadsUpSnoozeTime;
     private ListPreference mHeadsUpTimeOut;
 
@@ -191,6 +194,17 @@ public class NotificationSettings extends SettingsPreferenceFragment implements 
             return;
         }
 
+        mHeadsUpFloatingWindow = (SwitchPreference) findPreference(PREF_HEADS_UP_FLOATING);
+        mHeadsUpFloatingWindow.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HEADS_UP_FLOATING, 1, UserHandle.USER_CURRENT) == 1);
+        mHeadsUpFloatingWindow.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
+            @Override
+            public boolean onPreferenceChange(Preference preference, Object newValue) {
+                return Settings.System.putIntForUser(getContentResolver(),
+                        Settings.System.HEADS_UP_FLOATING,
+                        (Boolean) newValue ? 1 : 0, UserHandle.USER_CURRENT);
+            }
+        });
         mHeadsUpSnoozeTime = (ListPreference) findPreference(PREF_HEADS_UP_SNOOZE_TIME);
         mHeadsUpSnoozeTime.setOnPreferenceChangeListener(new OnPreferenceChangeListener() {
             @Override
