@@ -340,4 +340,8 @@
     <string name="color_green_title">Verde</string>
     <string name="color_blue_title">Blu</string>
 
+    <!-- Hardware tunables - Vibrator intensity -->
+    <string name="vibrator_intensity_title">Intensità vibratore</string>
+    <string name="vibrator_warning">Valori maggiori di %1$d non sono raccomandati</string>
+
 </resources>
