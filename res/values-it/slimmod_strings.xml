@@ -151,11 +151,20 @@
     <string name="network_monitors_title">Monitoraggio rete</string>
 
     <string name="heads_up_title">Notifiche heads up</string>
+    
+    <string name="heads_up_global_switch_title">Modalità Heads up</string>
+    <string name="heads_up_global_switch_summary_disabled">Heads up disattivate</string>
+    <string name="heads_up_global_switch_summary_perapp">Heads up attive in base alle impostazioni di notifica delle singole apps</string>
+    <string name="heads_up_global_switch_summary_forced">Heads up attive forzatamente per tutte le app</string>
+    <string name="heads_up_global_switch_disabled">Non visualizzare heads up</string>
+    <string name="heads_up_global_switch_perapp">Configurazione heads up per app</string>
+    <string name="heads_up_global_switch_forced">Visualizza sempre heads up</string>
+    
     <string name="app_notification_enable_heads_up_title">Mostra heads up</string>
     <string name="app_notification_enable_heads_up_summary">Mostra le notifiche di questa app come heads up</string>
     <string name="heads_up_snooze_title">Disattivazione temporanea</string>
     <string name="heads_up_snooze_summary">Premendo l\'icona di disattivazione le heads up verranno disattivate per <xliff:g id="number">%d</xliff:g> minuti</string>
-    <string name="heads_up_snooze_disabled_summary">Heads up riattivate</string>
+    <string name="heads_up_snooze_disabled_summary">Heads up riattivate</string> 
     <string name="heads_up_snooze_3min">3 minuti</string>
     <string name="heads_up_snooze_5min">5 minuti</string>
     <string name="heads_up_snooze_10min">10 minuti</string>
