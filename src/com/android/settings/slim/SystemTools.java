@@ -20,8 +20,8 @@ import android.app.ActivityManager;
 import android.content.Context;
 import android.content.ContentResolver;
 import android.content.Intent;
-//import android.content.pm.PackageManager;
-//import android.content.pm.PackageManager.NameNotFoundException;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.pm.ResolveInfo;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -40,8 +40,10 @@ import java.util.List;
 public class SystemTools extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
-        private static final String PREF_HEADS_UP_FLOATING = "heads_up_floating";
-        private SwitchPreference mHeadsUpFloatingWindow;
+
+    private static final String PREF_HEADS_UP_FLOATING = "heads_up_floating";
+    private SwitchPreference mHeadsUpFloatingWindow;
+    private static final String KEY_SUPERSU_APP = "supersu_settings";
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -49,24 +51,29 @@ public class SystemTools extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system_tools);
 
-        mHeadsUpFloatingWindow = (SwitchPreference) findPreference(PREF_HEADS_UP_FLOATING);
-        mHeadsUpFloatingWindow.setChecked(Settings.System.getIntForUser(getContentResolver(),
-                Settings.System.HEADS_UP_FLOATING, 1, UserHandle.USER_CURRENT) == 1);
-        mHeadsUpFloatingWindow.setOnPreferenceChangeListener(this);
+            mHeadsUpFloatingWindow = (SwitchPreference) findPreference(PREF_HEADS_UP_FLOATING);
+            mHeadsUpFloatingWindow.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                    Settings.System.HEADS_UP_FLOATING, 1, UserHandle.USER_CURRENT) == 1);
+            mHeadsUpFloatingWindow.setOnPreferenceChangeListener(this);
 
+            if (!isPackageInstalled("eu.chainfire.supersu")) {
+                PreferenceScreen screen = getPreferenceScreen();
+                Preference pref = getPreferenceManager().findPreference(KEY_SUPERSU_APP);
+                screen.removePreference(pref);
+                }
     }
 
-//    private boolean isPackageInstalled(String packageName) {
-//        PackageManager pm = getPackageManager();
-//        boolean installed = false;
-//        try {
-//           pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
-//           installed = true;
-//        } catch (PackageManager.NameNotFoundException e) {
-//           installed = false;
-//        }
-//        return installed;
-//    }
+    private boolean isPackageInstalled(String packageName) {
+        PackageManager pm = getPackageManager();
+        boolean installed = false;
+        try {
+           pm.getPackageInfo(packageName, PackageManager.GET_ACTIVITIES);
+           installed = true;
+        } catch (PackageManager.NameNotFoundException e) {
+           installed = false;
+        }
+        return installed;
+    }
 
     @Override
     public void onResume() {

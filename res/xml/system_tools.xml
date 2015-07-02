@@ -28,16 +28,6 @@
                 android:targetClass="com.grarak.kerneladiutor.MainActivity" />
         </PreferenceScreen>
 
-        <!-- SuperSU -->
-        <PreferenceScreen
-            android:id="@+id/supersu_settings"
-            android:title="@string/supersu_title">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="eu.chainfire.supersu"
-                android:targetClass="eu.chainfire.supersu.MainActivity" />
-        </PreferenceScreen>
-
         <!-- Power menu config -->
         <PreferenceScreen
             android:key="navbar_targets_settings"
@@ -77,4 +67,15 @@
                     android:summary="@string/slim_action_floats_summary"
                     android:defaultValue="false" />
         </PreferenceCategory>
+
+        <!-- SuperSU -->
+        <PreferenceScreen
+            android:key="supersu_settings"
+            android:id="@+id/supersu_settings"
+            android:title="@string/supersu_title">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="eu.chainfire.supersu"
+                android:targetClass="eu.chainfire.supersu.MainActivity" />
+        </PreferenceScreen>
 </PreferenceScreen>
