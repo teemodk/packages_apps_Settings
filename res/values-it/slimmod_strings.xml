@@ -151,6 +151,15 @@
     <string name="network_monitors_title">Monitoraggio rete</string>
 
     <string name="heads_up_title">Notifiche heads up</string>
+    <string name="heads_up_global_switch_title">Modalità Heads up</string>
+    <string name="heads_up_global_switch_summary_disabled">Heads up disattivate</string>
+    <string name="heads_up_global_switch_summary_perapp">Heads up attive in base alle impostazioni di notifica delle singole apps</string>
+    <string name="heads_up_global_switch_summary_forced">Heads up attive forzatamente per tutte le app</string>
+    <string name="heads_up_global_switch_disabled">Non visualizzare heads up</string>
+    <string name="heads_up_global_switch_perapp">Configurazione heads up per app</string>
+    <string name="heads_up_global_switch_forced">Visualizza sempre heads up</string>
+    <string name="app_notification_enable_heads_up_global_disabled_summary">Le heads up sono disattivate globalmente</string>
+    <string name="app_notification_enable_heads_up_global_forced_summary">Le heads up sono attivate in modo forzato</string>
     <string name="app_notification_enable_heads_up_title">Mostra heads up</string>
     <string name="app_notification_enable_heads_up_summary">Mostra le notifiche di questa app come heads up</string>
     <string name="heads_up_snooze_title">Disattivazione temporanea</string>
