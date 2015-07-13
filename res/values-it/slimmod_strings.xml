@@ -353,4 +353,23 @@
     <string name="vibrator_intensity_title">Intensità vibratore</string>
     <string name="vibrator_warning">Valori maggiori di %1$d non sono raccomandati</string>
 
+    <!-- Performance settings -->
+    <string name="title_tile_performance_profile">Profili prestazioni</string>
+    <string name="performance_settings_title">Prestazioni</string>
+
+    <!-- Performance Settings : Performance profile settings -->
+    <string name="perf_profile_title">Profilo</string>
+
+    <!-- Performance Settings : Warning dialog -->
+    <string name="performance_settings_warning_title">Procedere con cautela</string>
+    <string name="performance_settings_warning">Queste impostazioni sono sperimentali e possono causare instabilità o problemi più gravi.\n\nNon comunicare bug reports se queste impostazioni sono state modificate.</string>
+
+    <!-- Performance Settings : Set on boot option -->
+    <string name="performance_set_on_boot">Imposta all\'avvio</string>
+    <string name="performance_set_on_boot_summary">RIpristina configurazione personalizzata all\'avvio</string>
+
+    <!-- Automatic performance profiles -->
+    <string name="autoperf_title">Attiva profili per-app</string>
+    <string name="autoperf_summary">Imposta profili automaticamente per varie apps</string>
+
 </resources>
