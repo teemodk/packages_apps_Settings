@@ -372,4 +372,11 @@
     <string name="autoperf_title">Attiva profili per-app</string>
     <string name="autoperf_summary">Imposta profili automaticamente per varie apps</string>
 
+    <string name="dim_nav_buttons_title">Oscura pulsanti dopo inattività</string>
+    <string name="dim_nav_buttons_summary">Riduce la luminosità dei pulsanti nella navbar dopo un tempo specificato di inattività sulla stessa</string>
+    <string name="dim_nav_buttons_timeout_title">Timeout</string>
+    <string name="dim_nav_buttons_timeout_summary">Tempo (in millisecondi) di attesa prima di ridurre la luminosità dei pulsanti</string>
+    <string name="dim_nav_buttons_alpha_title">Opacità</string>
+    <string name="dim_nav_buttons_alpha_summary">Livello di trasparenza da applicare per l\'oscuramento</string>
+
 </resources>
