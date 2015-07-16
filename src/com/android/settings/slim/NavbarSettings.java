@@ -33,6 +33,7 @@ import android.preference.PreferenceScreen;
 import android.preference.SwitchPreference;
 import android.preference.SlimSeekBarPreference;
 import android.provider.Settings;
+import android.provider.Settings.Secure;
 
 import com.android.internal.util.slim.DeviceUtils;
 import com.android.internal.util.slim.Action;
@@ -51,6 +52,8 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     private static final String PREF_STYLE_DIMEN = "navbar_style_dimen_settings";
     private static final String PREF_NAVIGATION_BAR_CAN_MOVE = "navbar_can_move";
     private static final String STATUS_BAR_IME_ARROWS = "status_bar_ime_arrows";
+    private static final String SEARCH_PANEL_ENABLED = "search_panel_enabled";
+    private static final String PREF_RING = "navigation_bar_ring";
     private static final String DIM_NAV_BUTTONS = "dim_nav_buttons";
     private static final String DIM_NAV_BUTTONS_TIMEOUT = "dim_nav_buttons_timeout";
     private static final String DIM_NAV_BUTTONS_ALPHA = "dim_nav_buttons_alpha";
@@ -68,6 +71,8 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
     PreferenceScreen mButtonPreference;
     PreferenceScreen mStyleDimenPreference;
     SwitchPreference mStatusBarImeArrows;
+    SwitchPreference mSearchPanelEnabled;
+    PreferenceScreen mRingPreference;
     SwitchPreference mDimNavButtons;
     SlimSeekBarPreference mDimNavButtonsTimeout;
     SlimSeekBarPreference mDimNavButtonsAlpha;
@@ -126,6 +131,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mStatusBarImeArrows = (SwitchPreference) findPreference(STATUS_BAR_IME_ARROWS);
         mStatusBarImeArrows.setOnPreferenceChangeListener(this);
 
+        mSearchPanelEnabled = (SwitchPreference) findPreference(SEARCH_PANEL_ENABLED);
+        mSearchPanelEnabled.setOnPreferenceChangeListener(this);
+
+        mRingPreference = (PreferenceScreen) findPreference(PREF_RING);
+
         mDimNavButtons = (SwitchPreference) findPreference(DIM_NAV_BUTTONS);
         mDimNavButtons.setOnPreferenceChangeListener(this);
 
@@ -178,6 +188,9 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mStatusBarImeArrows.setChecked(Settings.System.getInt(getContentResolver(),
                 Settings.System.STATUS_BAR_IME_ARROWS, 0) == 1);
 
+        mSearchPanelEnabled.setChecked(Settings.System.getInt(getContentResolver(),
+                Settings.Secure.SEARCH_PANEL_ENABLED, 0) == 1);
+
         if (mDimNavButtons != null) {
             mDimNavButtons.setChecked(Settings.System.getInt(getContentResolver(),
                     Settings.System.DIM_NAV_BUTTONS, 0) == 1);
@@ -222,6 +235,8 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         mMenuDisplayLocation.setEnabled(show
             && mNavBarMenuDisplayValue != 1);
         mStatusBarImeArrows.setEnabled(show);
+        mSearchPanelEnabled.setEnabled(show);
+        mRingPreference.setEnabled(show);
         mDimNavButtons.setEnabled(show);
         mDimNavButtonsTimeout.setEnabled(show);
         mDimNavButtonsAlpha.setEnabled(show);
@@ -260,6 +275,11 @@ public class NavbarSettings extends SettingsPreferenceFragment implements
         } else if (preference == mStatusBarImeArrows) {
             Settings.System.putInt(getActivity().getContentResolver(),
                 Settings.System.STATUS_BAR_IME_ARROWS,
+                    ((Boolean) newValue) ? 1 : 0);
+            return true;
+        } else if (preference == mSearchPanelEnabled) {
+            Settings.System.putInt(getActivity().getContentResolver(),
+                Settings.Secure.SEARCH_PANEL_ENABLED,
                     ((Boolean) newValue) ? 1 : 0);
             return true;
         } else if (preference == mDimNavButtons) {
