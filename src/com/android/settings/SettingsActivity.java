@@ -1239,7 +1239,7 @@ public class SettingsActivity extends Activity
                         removeTile = true;
                     }
                 } else if (id == R.id.performance_settings) {
-                    if (!(pm.hasPowerProfiles())) {
+                    if (!(pm.hasPowerProfiles() || (showDev && !Build.TYPE.equals("user")))) {
                         removeTile = true;
                     }
                 }
