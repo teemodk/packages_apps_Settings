@@ -333,6 +333,7 @@
   <string name="clock_date_style_uppercase">Maiuscolo</string>
   <string name="clock_date_format_custom">Formato java personalizzato</string>
   <string name="status_bar_clock_style_reset_message">Resettare i colori dell\'orologio?</string>
+  <string name="status_bar_ticker_summary">Animazione del testo della notifica nella barra di stato</string>
   <string name="status_bar_toggle_brightness">Controllo luminosità</string>
   <string name="status_bar_toggle_brightness_summary">Modifica la luminosità effettuando uno slide sulla barra di stato</string>
   <string name="status_bar_toggle_info">É attiva la luminosità automatica</string>
@@ -561,4 +562,5 @@
   <string name="shortcut_action_power">Spegni schermo</string>
   <string name="shortcut_action_search">Ricerca nell\'app</string>
   <string name="shortcut_action_none">Niente</string>
+
 </resources>
