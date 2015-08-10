@@ -219,6 +219,10 @@
     <string name="pie_show_snap_title">Mostra punti di ancoraggio</string>
     <string name="pie_show_snap_summary">Mostra i punti di ancoraggio per cambiare i punti di attivazione dinamicamente</string>
     <string name="pie_show_text_title">Mostra stato e orologio</string>
+    <string name="clock_date_position">Posizione data</string>
+    <string name="clock_date_right">A destra dell\'orologio</string>
+    <string name="clock_date_left">A sinistra dell\'orologio</string>
+    <string name="left_clock">Orologio a sinistra</string>
     <string name="pie_show_text_summary">Mostra lo stato del telefono, la data e l\'ora</string>
     <string name="pie_show_background_title">Mostra sfondo</string>
     <string name="pie_show_background_summary">Attiva lo sfondo della Pie su tutto lo schermo</string>
