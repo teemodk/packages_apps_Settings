@@ -388,4 +388,17 @@
     <string name="navigation_save_button_text">Salva</string>
     <string name="navigation_bar_reset_message">Eliminare le impostazioni attuali e ripristinare la disposizione predefinita?</string>
 
+    <!-- WiFi country code -->
+    <string name="wifi_country_summary_prefix">Località impostata su</string>
+    <string name="wifi_country_summary_suffix">\n(Questa modifica può essere illegale in alcuni Paesi, verifica le leggi locali)</string>
+    <string name="wifi_country_code_title">Codice località Wi-Fi</string>
+    <string name="wifi_country_code_summary">Impostazione automatica località per lista canali Wi-Fi\n(Questa modifica può essere illegale in alcuni Paesi, verifica le leggi locali)</string>
+    <string name="wifi_country_code_error">Il codice località Wi-Fi non può essere impostato !</string>
+
+    <!-- WiFi country override -->
+    <string name="wifi_country_override_title">Sovrascrittura codice località Wi-Fi</string>
+    <string name="wifi_country_override_summary">Località automatica basata sulla rete (MMC) (modalità predefinita)\n(Questa modifica può essere illegale in alcuni Paesi, verifica le leggi locali)</string>
+    <string name="wifi_country_override_error">La sovrascrittura del codice località Wi-Fi non può essere effettuata !</string>
+    <string name="wifi_country_mcc">modalità automatica basata sulla rete (MMC) (modalità predefinita)</string>
+
 </resources>
