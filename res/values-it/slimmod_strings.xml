@@ -401,4 +401,7 @@
     <string name="wifi_country_override_error">La sovrascrittura del codice località Wi-Fi non può essere effettuata !</string>
     <string name="wifi_country_mcc">modalità automatica basata sulla rete (MMC) (modalità predefinita)</string>
 
+    <!-- WiFi auto-configure priorities -->
+    <string name="wifi_auto_config_priorities">Priorità automatica</string>
+
 </resources>
