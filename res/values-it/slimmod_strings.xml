@@ -404,4 +404,6 @@
     <!-- WiFi auto-configure priorities -->
     <string name="wifi_auto_config_priorities">Priorità automatica</string>
 
+    <!-- Lock screen rotation -->
+    <string name="display_lockscreen_rotation_title">Schermata di sblocco</string>
 </resources>
