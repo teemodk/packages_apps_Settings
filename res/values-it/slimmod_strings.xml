@@ -406,4 +406,7 @@
 
     <!-- Lock screen rotation -->
     <string name="display_lockscreen_rotation_title">Schermata di sblocco</string>
+
+    <string name="kernel_adiutor_title">Kernel Adiutor</string>
+    <string name="kernel_adiutor_summary">Configurazione parametri kernel e gestures risveglio-sospensione</string>
 </resources>

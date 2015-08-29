@@ -99,4 +99,7 @@
     <string name="screen_recorder_bitrate_10000000">10000000</string>
     <string name="screen_recorder_bitrate_20000000">20000000</string>
 
+    <string name="kernel_adiutor_title">Kernel Adiutor</string>
+    <string name="kernel_adiutor_summary">Config kernel parameters and wake-sleep gestures</string>
+
 </resources>
