@@ -18,6 +18,7 @@ package com.android.settings.slim;
 
 import android.app.ActivityManager;
 import android.content.Context;
+import android.content.ContentResolver;
 import android.content.Intent;
 //import android.content.pm.PackageManager;
 //import android.content.pm.PackageManager.NameNotFoundException;
@@ -39,11 +40,19 @@ import java.util.List;
 public class SystemTools extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+        private static final String PREF_HEADS_UP_FLOATING = "heads_up_floating";
+        private SwitchPreference mHeadsUpFloatingWindow;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         addPreferencesFromResource(R.xml.system_tools);
+
+        mHeadsUpFloatingWindow = (SwitchPreference) findPreference(PREF_HEADS_UP_FLOATING);
+        mHeadsUpFloatingWindow.setChecked(Settings.System.getIntForUser(getContentResolver(),
+                Settings.System.HEADS_UP_FLOATING, 1, UserHandle.USER_CURRENT) == 1);
+        mHeadsUpFloatingWindow.setOnPreferenceChangeListener(this);
 
     }
 
@@ -65,6 +74,12 @@ public class SystemTools extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        if (preference == mHeadsUpFloatingWindow) {
+            Settings.System.putIntForUser(getContentResolver(),
+                    Settings.System.HEADS_UP_FLOATING,
+            (Boolean) newValue ? 1 : 0, UserHandle.USER_CURRENT);
+            return true;
+        }
         return false;
     }
 }

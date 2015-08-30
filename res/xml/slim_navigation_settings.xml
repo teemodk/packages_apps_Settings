@@ -41,10 +41,4 @@
                 android:targetClass="com.slim.device.settings.ScreenOffGestureSettings" />
     </Preference>
 
-    <com.android.settings.slim.SystemSettingSwitchPreference
-        android:key="slim_action_floats"
-        android:title="@string/slim_action_floats"
-        android:summary="@string/slim_action_floats_summary"
-        android:defaultValue="false" />
-
 </PreferenceScreen>
