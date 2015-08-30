@@ -405,7 +405,7 @@
   <string name="shortcut_action_max">Il numero massimo di voci è stato raggiunto</string>
   <string name="shortcut_action_warning">Attenzione</string>
   <string name="shortcut_action_warning_message">Non è possibile eliminare l\'ultima voce</string>
-  <string name="shortcut_action_disable_message">Disattivato\nAggiung una voce per attivare questa funzione</string>
+  <string name="shortcut_action_disable_message">Disattivato\nAggiungi una voce per attivare questa funzione</string>
   <string name="shortcut_image_not_valid">L\'app selezionata non ha fornito un\'icona valida o non supporta il ritaglio immagine. Usane un\'altra.</string>
   <string name="shortcut_duplicate_entry">L\'azione seguente non può essere aggiunta due volte</string>
   <string name="shortcut_action_help_shortcut">scorciatoia</string>

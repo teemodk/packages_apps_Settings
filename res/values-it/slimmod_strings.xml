@@ -413,7 +413,7 @@
     <!-- Recent app sidebar -->
     <string name="recent_app_sidebar_title">Barra preferiti</string>
     <string name="recent_app_sidebar_summary">Mostra le app preferite nell\'altro angolo dello schermo</string>
-    <string name="recent_app_sidebar_style_title">Stile barra laterlae</string>
+    <string name="recent_app_sidebar_style_title">Stile barra laterale</string>
     <string name="recent_app_sidebar_style_summary">Mostra l\'aspetto della barra laterale dei preferiti</string>
     <string name="recent_app_sidebar_hide_labels_title">Nascondi etichetta</string>
     <string name="recent_app_sidebar_label_color_title">Colore etichetta</string>
