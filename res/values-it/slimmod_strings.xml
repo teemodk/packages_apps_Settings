@@ -409,4 +409,14 @@
 
     <string name="kernel_adiutor_title">Kernel Adiutor</string>
     <string name="kernel_adiutor_summary">Configurazione parametri kernel e gestures risveglio-sospensione</string>
+
+    <!-- Recent app sidebar -->
+    <string name="recent_app_sidebar_title">Barra preferiti</string>
+    <string name="recent_app_sidebar_summary">Mostra le app preferite nell\'altro angolo dello schermo</string>
+    <string name="recent_app_sidebar_style_title">Stile barra laterlae</string>
+    <string name="recent_app_sidebar_style_summary">Mostra l\'aspetto della barra laterale dei preferiti</string>
+    <string name="recent_app_sidebar_hide_labels_title">Nascondi etichetta</string>
+    <string name="recent_app_sidebar_label_color_title">Colore etichetta</string>
+    <string name="recent_app_sidebar_bg_color_title">Colore sfondo</string>
+    <string name="recent_app_sidebar_scale_title">Dimensione</string>
 </resources>
