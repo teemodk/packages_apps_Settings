@@ -419,4 +419,10 @@
     <string name="recent_app_sidebar_label_color_title">Colore etichetta</string>
     <string name="recent_app_sidebar_bg_color_title">Colore sfondo</string>
     <string name="recent_app_sidebar_scale_title">Dimensione</string>
+
+    <string name="floating_mode_title">Modalità Floating</string>
+    <string name="heads_up_floating_window_title">Modalità Floating dalle heads up</string>
+    <string name="heads_up_floating_window_summary">Tieni premuto e rilascia le heads up per avviare l\'app in floating mode quando non in home</string>
+    <string name="slim_action_floats">Modalità Floating dalle azioni veloci</string>
+    <string name="slim_action_floats_summary">Le app lanciate dalle Slim actions o dalla pressione lunga sui tasti della navbar vengono avviate in modalità floating</string>
 </resources>
