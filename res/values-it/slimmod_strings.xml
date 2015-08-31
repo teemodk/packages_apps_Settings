@@ -425,4 +425,7 @@
     <string name="heads_up_floating_window_summary">Tieni premuto e rilascia (o fai doppio tap) le heads up per avviare l\'app in floating mode quando non in home</string>
     <string name="slim_action_floats">Modalità Floating dalle azioni veloci</string>
     <string name="slim_action_floats_summary">Le app lanciate dalle Slim actions o dalla pressione lunga sui tasti della navbar vengono avviate in modalità floating</string>
+
+    <string name="other_stuff">Configurazione tools</string>
+    <string name="system_stuff">Configurazione sistema</string>
 </resources>

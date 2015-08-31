@@ -108,4 +108,7 @@
     <string name="slim_action_floats">Floating mode from actions</string>
     <string name="slim_action_floats_summary">Launch Slim and NavBar Actions in floating mode</string>
 
+    <string name="other_stuff">Tools config</string>
+    <string name="system_stuff">System config</string>
+
 </resources>

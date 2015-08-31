@@ -17,16 +17,28 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
-        <!-- KernelAdiutor -->
-        <PreferenceScreen
-            android:key="key_kernel_adiutor"
-            android:title="@string/kernel_adiutor_title"
-            android:summary="@string/kernel_adiutor_summary">
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="com.grarak.kerneladiutor"
-                android:targetClass="com.grarak.kerneladiutor.MainActivity" />
-        </PreferenceScreen>
+        <!-- Floating mode switch -->
+        <PreferenceCategory
+            android:key="floating_mode"
+            android:title="@string/floating_mode_title" >
+
+            <SwitchPreference
+                    android:key="heads_up_floating"
+                    android:title="@string/heads_up_floating_window_title"
+                    android:summary="@string/heads_up_floating_window_summary"
+                    android:persistent="false"
+                    android:defaultValue="true" />
+
+            <com.android.settings.slim.SystemSettingSwitchPreference
+                    android:key="slim_action_floats"
+                    android:title="@string/slim_action_floats"
+                    android:summary="@string/slim_action_floats_summary"
+                    android:defaultValue="false" />
+        </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="other_stuff"
+            android:title="@string/other_stuff" >
 
         <!-- Power menu config -->
         <PreferenceScreen
@@ -48,25 +60,22 @@
             android:title="@string/screen_recorder_title"
             android:fragment="com.android.settings.slim.ScreenRecorderSettings" >
         </PreferenceScreen>
-
-        <!-- Floating mode switch -->
-        <PreferenceCategory
-            android:key="floating_mode"
-            android:title="@string/floating_mode_title" >
-
-            <SwitchPreference
-                    android:key="heads_up_floating"
-                    android:title="@string/heads_up_floating_window_title"
-                    android:summary="@string/heads_up_floating_window_summary"
-                    android:persistent="false"
-                    android:defaultValue="true" />
-
-            <com.android.settings.slim.SystemSettingSwitchPreference
-                    android:key="slim_action_floats"
-                    android:title="@string/slim_action_floats"
-                    android:summary="@string/slim_action_floats_summary"
-                    android:defaultValue="false" />
         </PreferenceCategory>
+
+        <PreferenceCategory
+            android:key="system_stuff"
+            android:title="@string/system_stuff" >
+
+        <!-- KernelAdiutor -->
+        <PreferenceScreen
+            android:key="key_kernel_adiutor"
+            android:title="@string/kernel_adiutor_title"
+            android:summary="@string/kernel_adiutor_summary">
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="com.grarak.kerneladiutor"
+                android:targetClass="com.grarak.kerneladiutor.MainActivity" />
+        </PreferenceScreen>
 
         <!-- SuperSU -->
         <PreferenceScreen
@@ -78,4 +87,6 @@
                 android:targetPackage="eu.chainfire.supersu"
                 android:targetClass="eu.chainfire.supersu.MainActivity" />
         </PreferenceScreen>
+        </PreferenceCategory>
+
 </PreferenceScreen>
