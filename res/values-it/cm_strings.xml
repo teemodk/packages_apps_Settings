@@ -26,4 +26,6 @@
 
     <string name="usb_not_connected">USB non connessa</string>
 
+    <string name="qs_hide_tiles_with_sensitive_data">Nascondi le tiles sensibili nella schermata di sblocco sicura</string>
+
 </resources>
