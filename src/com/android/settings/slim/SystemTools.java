@@ -52,9 +52,10 @@ public class SystemTools extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.system_tools);
 
+            boolean headsUpFloatingWindow = Settings.System.getInt(getContentResolver(),
+                                          Settings.System.HEADS_UP_FLOATING, 0) == 1;
             mHeadsUpFloatingWindow = (SwitchPreference) findPreference(PREF_HEADS_UP_FLOATING);
-            mHeadsUpFloatingWindow.setChecked(Settings.System.getIntForUser(getContentResolver(),
-                    Settings.System.HEADS_UP_FLOATING, 1, UserHandle.USER_CURRENT) == 1);
+            mHeadsUpFloatingWindow.setChecked(headsUpFloatingWindow);
             mHeadsUpFloatingWindow.setOnPreferenceChangeListener(this);
 
             if (!isPackageInstalled("eu.chainfire.supersu")) {
