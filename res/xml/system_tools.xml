@@ -60,6 +60,11 @@
             android:title="@string/screen_recorder_title"
             android:fragment="com.android.settings.slim.ScreenRecorderSettings" >
         </PreferenceScreen>
+
+        <com.android.settings.slim.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:title="@string/double_tap_sleep_anywhere_title"
+            android:summary="@string/double_tap_sleep_anywhere_summary" />
         </PreferenceCategory>
 
         <PreferenceCategory

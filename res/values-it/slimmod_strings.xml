@@ -428,4 +428,7 @@
 
     <string name="other_stuff">Configurazione tools</string>
     <string name="system_stuff">Configurazione sistema</string>
+
+    <string name="double_tap_sleep_anywhere_title">Doppio tap lockscreen per spegnere</string>
+    <string name="double_tap_sleep_anywhere_summary">Doppio tap sulla schermata di sblocco per spegnere lo schermo</string>
 </resources>
