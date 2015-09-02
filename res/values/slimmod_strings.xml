@@ -102,12 +102,6 @@
     <string name="kernel_adiutor_title">Kernel Adiutor</string>
     <string name="kernel_adiutor_summary">Config kernel parameters and wake-sleep gestures</string>
 
-    <string name="floating_mode_title">Floating mode</string>
-    <string name="heads_up_floating_window_title">Floating mode from heads up</string>
-    <string name="heads_up_floating_window_summary">Longpress and release to open in floating mode when not on home screen</string>
-    <string name="slim_action_floats">Floating mode from actions</string>
-    <string name="slim_action_floats_summary">Launch Slim and NavBar Actions in floating mode</string>
-
     <string name="other_stuff">Tools config</string>
     <string name="system_stuff">System config</string>
 
