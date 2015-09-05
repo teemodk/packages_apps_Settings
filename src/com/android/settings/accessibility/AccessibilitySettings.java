@@ -391,7 +391,7 @@ public class AccessibilitySettings extends SettingsPreferenceFragment implements
         if (mLongPressTimeoutValuetoTitleMap.size() == 0) {
             String[] timeoutValues = getResources().getStringArray(
                     R.array.long_press_timeout_selector_values);
-            mLongPressTimeoutDefault = Integer.parseInt(timeoutValues[0]);
+            mLongPressTimeoutDefault = Integer.parseInt(timeoutValues[1]);
             String[] timeoutTitles = getResources().getStringArray(
                     R.array.long_press_timeout_selector_titles);
             final int timeoutValueCount = timeoutValues.length;
