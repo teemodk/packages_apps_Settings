@@ -717,9 +717,9 @@
 
     <!-- Values for the list of long press timeout options. -->
     <string-array name="long_press_timeout_selector_values" translatable="false">
+        <item>250</item>
         <item>500</item>
-        <item>1000</item>
-        <item>1500</item>
+        <item>1200</item>
     </string-array>
 
     <!-- Titles for captioning typeface preference. [CHAR LIMIT=35] -->
